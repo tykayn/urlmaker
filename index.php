@@ -1,21 +1,31 @@
 <?php 
+/** URL-maker
+ * @name URL-maker
+ * @author Baptiste Lemoine - http://artlemoine.com
+ * @version 1
+ * @date August 06, 2011
+ * @category web application
+ * @example Visit http://artlemoine.com/medias/apps/url-maker/demo
+ */
+ 
+$path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = '';
+
 require'urlm_lib/securite.php';
 require'urlm_lib/config.php';
 
-$file ='urlm_lib/config_abs.conf';
-if(!file_exists( $file )){
- //teste si l'appli a été configuré avec $disurl
-	header("Location: urlm_lib/setup.php") ;/* Redirection du navigateur */
-			exit;
+
+		function selected($key='langage',$val , $retour='selected' ){ // détection du langage d'URL choisi pour la présélectionner
+			if( isset($_POST[$key]) && $_POST[$key] == $val ){
+				echo $retour;
+			}
+		}
+		if(!file_exists( $file )){
+echo"<span class='warning noconf'>Il n'y a pas de configuration de l'url absolue. Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</span>";
 		
 		}
-		else{
-		// Lit un fichier, et le place dans une chaîne
-		$handle = fopen($file, "r");
-		$disurl = fread($handle, filesize($file));
-		fclose($handle);
+		elseif( filesize($file) < 10){
+		echo"<span class='warning noconf'>l'url absolue est trop courte. Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</span>";
 		
-		$disurlinfo .= "<span class='success'>disurl: $disurl</span>";
 		}
 ?>
 <!DOCTYPE html>
@@ -24,7 +34,25 @@ if(!file_exists( $file )){
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>URL maker Tykayn</title>
 		<link rel="stylesheet" media="screen" type="text/css" title="Mon design" href="urlm_lib/design.css" /> 
-		<link rel="shortcut icon" type="image/png" href="urlm_lib/favicon.png" />
+		<link rel="shortcut icon" type="image/png" href="urlm_lib/img/favicon.png" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>
+		$(function() {
+			dimspe = $('#dim_spe');
+			dimspe.hide();
+			
+			// afficher la dimension spéciale si html sélectionné
+			$('#sel_lang').on('change', function(){
+			if( $('#sel_lang').val() == 'html' )
+				dimspe.show();
+			else{
+				dimspe.hide();
+			}
+			})
+    });
+	
+		
+		</script>
     </head>
     <body>
 		
@@ -37,44 +65,41 @@ if(!file_exists( $file )){
 					</a>
 				</span>
 			
-		<nav><a href='?p=top'><img src='urlm_lib/favicon.png' alt='URL maker logo'/> Accueil</a>|<a href='?p=year'>Année <?php echo date(Y); ?></a>><a href='?'> <?php echo date(m); ?>e Mois</a>. <a href="http://www.ailesse.info/~tykayn/bazar/kotlife/urlm_lib/setup.php">Config</a></nav>
-		<form method='GET' cible='index.php'>
+		<nav>
+		
+		<a href='?p=top'>
+		<img src='urlm_lib/img/favicon.png' alt='URL maker logo'/> Accueil</a>
+		|<a href='?p=year'>Année <?php echo date('Y'); ?></a>>
+		<a href='?p=month'> <?php echo date('m'); ?>e Mois</a>
+		
+		</nav>
+		<form method='POST' cible='index.php'>
 				<fieldset id='options'>
 				
-				<h2 >Options</h2>
-				<span class="choix"><input type='checkbox' name='backreturn' value='1' checked='checked'/> Retour à la ligne?</span>
+				<h2 >Options | <a href="urlm_lib/setup.php">Config</a></h2>
+				<span class="choix"><input type='checkbox' name='backreturn' value='1' <?php selected('backreturn','1','checked'); ?>/> Retour à la ligne</span>
 				<span class="choix"><input type='checkbox' name='thumb' value='0' /> sans /thumb ou /g.</span>
-				<span class="choix"><input type='radio' name='langage' value='wiki' checked='checked'/> WIKI </span>
-				<span class="choix"><input type='radio' name='langage' value='bbcode' /> BBCODE</span>
-				<span class="choix"><input type='radio' name='langage' value='html' /> HTML<br/></span>
-				
-				<span class="choix"><input type='checkbox' name='activer' value='1' /> Activer Dimensions spéciales:</span>
-				<br/>
-				<span class="choix">Largeur: <input type='text' name='largeur' value='500' size='4'/></span>
-				<span class="choix">hauteur:<input type='text' name='hauteur' value='500' size='4'/> </span>
-
+				<select id="sel_lang" name='langage'>
+					<option value='wiki' <?php selected( 'langage','wiki'); ?>>
+					WIKI
+					</option>
+					<option value='bbcode' <?php selected( 'langage','bbcode'); ?> >
+					BBCODE
+					</option>
+					<option value='html' <?php selected( 'langage','html'); ?> >
+					HTML
+					</option>
+				</select>
+				<div id="dim_spe">
+					<span class="choix"><input type='checkbox' name='activer' value='1' <?php selected('activer','1','checked'); ?> /> Activer Dimensions spéciales:</span>
+					<span class="choix">Largeur: <input type='text' name='largeur' value='500' size='4'/></span>
+					<span class="choix">hauteur:<input type='text' name='hauteur' value='500' size='4'/> </span>
+				</div>
 <?php 
-/** URL-maker
- * @name URL-maker
- * @author Baptiste Lemoine - http://artlemoine.com
- * @version 1
- * @date August 06, 2011
- * @category web application
- * @example Visit http://artlemoine.com/medias/apps/url-maker/demo
- */
-
-
-
-  
-
-//$disurl= curPageURL();
 
 //si l'url choppée contient index.php, on retire tout ça
 $urlsansindex = explode('index.php',$disurl);
-//echo"$urlsansindex[0] url avant index";
-  
-		
-		 
+
 				$dossiers='';
 				$textes='';
 				$br = $dir_unfound ='';
@@ -85,7 +110,7 @@ $urlsansindex = explode('index.php',$disurl);
 				$hauteur='';
 				$pourcopier='';
 				$thumb=1;
-				if (isset($_GET['thumb']) && $_GET['thumb']==0){ $thumb = 0;}
+				if (isset($_POST['thumb']) && $_POST['thumb']==0){ $thumb = 0;}
 				$prethumb='';
 				$afterthumb='';
 				 $postlien = $prelien=$prehtml = $posthtml = $add = '';

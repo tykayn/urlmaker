@@ -1,5 +1,6 @@
 <?php 
-require'securite.php';
+//require'securite.php';
+$disurl='';
 require'config.php';
 $corps='';
 $url = curPageURL();
@@ -9,7 +10,9 @@ $file = 'config_abs.conf';
 		$corps .= "<span class='info'>Le fichier de configuration d'URL absolue $file doit être créé pour faire fonctionner URL maker </span> ";
 		}
 		else{
-		$corps .= "<span class='success'>Le fichier de configuration d'URL absolue $file est déjà créé. Pas besoin de le redéfinir</span>";
+		$corps .= "<span class='success'>Le fichier de configuration d'URL absolue $file est déjà créé. Pas besoin de le redéfinir <br/>
+		$disurl
+		</span>";
 		}
 ?>
 <!DOCTYPE html>
@@ -18,11 +21,13 @@ $file = 'config_abs.conf';
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>URL maker Tykayn</title>
 		<link rel="stylesheet" media="screen" type="text/css" title="Mon design" href="design.css" /> 
-		<link rel="shortcut icon" type="image/png" href="urlm_lib/favicon.png" />
+		<link rel="shortcut icon" type="image/png" href="urlm_lib/img/favicon.png" />
     </head>
     <body>
 		
 		<div id='main'>
+		<a href='../'>
+		<img src='img/favicon.png' alt='URL maker logo'/> Accueil</a>
 		<fieldset class="setup">
 		<h1>Installation</h1>
 		<?php echo $corps; ?>
@@ -31,6 +36,7 @@ $file = 'config_abs.conf';
 		<input type="text" name="disurl" value="<?php echo $url; ?> "  size="100"/><br/>
 		<input type="submit" value="enregistrer" />
 		</fieldset>
+		
 		</div>
 		
 	</body>

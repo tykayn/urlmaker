@@ -21,7 +21,7 @@ $localroot=''; //C:\Program Files\UwAmp2\www\url_maker
 //adresse ABSOLUE du dossier où se trouve cette page sur un serveur web.  ça ne fonctionnera pas sur un autre serveur. Regardez sur http://www.ailesse.info/~tykayn/bazar/kotlife pour une démo
 //servira à créer les URL à copier, par exemple:
 //mettez selon le nom de votre site  $disurl='http://monsite.com/urlmaker';   
-$disurl='';
+$disurl='http://tykayn.fr/public';
 
 //adresse RELATIVE du dossier où se trouve cette page sur un serveur web. par défaut vaut:   getcwd().'/'
 $disrel=getcwd().'/'; 
@@ -34,7 +34,7 @@ date_default_timezone_set('Europe/Paris');
 
 function curPageURL() {
  $pageURL = 'http';
- if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+ if (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
  $pageURL .= "://";
  if ($_SERVER["SERVER_PORT"] != "80") {
   $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
@@ -86,3 +86,23 @@ Adresse relative: $disrel
 Adresse de blog nouveau post: $blognewposturl
 $browserrr
 ");
+
+$file ='urlm_lib/config_abs.conf';
+if(!file_exists( $file )){
+//echo"<span class='warning noconf'>Il n'y a pas de configuration de l'url absolue. Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</span>";
+
+ //teste si l'appli a été configuré avec $disurl
+	//header("Location: urlm_lib/setup.php") ;/* Redirection du navigateur */
+		//	exit;
+		
+		}
+		else{
+		// Lit un fichier, et le place dans une chaîne
+		$handle = fopen($file, "r");
+
+		$disurl = fread($handle, filesize($file));
+		fclose($handle);
+		
+		$disurlinfo .= "<span class='success'>disurl: $disurl</span>";
+		}
+		
