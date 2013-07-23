@@ -7,12 +7,12 @@
  * @category web application
  * @example Visit http://artlemoine.com/medias/apps/url-maker/demo
  */
- 
-$path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = '';
+ $index= 1;
+$path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = $debug ='';
 
 require'urlm_lib/securite.php';
 require'urlm_lib/config.php';
-
+$debug .='<h2> index </h2>';
 
 		function selected($key='langage',$val , $retour='selected' ){ // détection du langage d'URL choisi pour la présélectionner
 			if( isset($_POST[$key]) && $_POST[$key] == $val ){
@@ -74,12 +74,13 @@ echo"<span class='warning noconf'>Il n'y a pas de configuration de l'url absolue
 		
 		</nav>
 		<form method='POST' cible='index.php'>
+                    
 				<fieldset id='options'>
-				
 				<h2 >Options | <a href="urlm_lib/setup.php">Config</a></h2>
+				<input type='submit' value='envoyer' />
 				<span class="choix"><input type='checkbox' name='backreturn' value='1' <?php selected('backreturn','1','checked'); ?>/> Retour à la ligne</span>
 				<span class="choix"><input type='checkbox' name='thumb' value='0' /> sans /thumb ou /g.</span>
-				<select id="sel_lang" name='langage'>
+                                <select id="sel_lang" name='langage'>
 					<option value='wiki' <?php selected( 'langage','wiki'); ?>>
 					WIKI
 					</option>
@@ -90,6 +91,24 @@ echo"<span class='warning noconf'>Il n'y a pas de configuration de l'url absolue
 					HTML
 					</option>
 				</select>
+                                
+                                Ranger par
+                                <select id="sort" name='sort'>
+					<option value='crea' <?php selected( 'sort','crea'); ?>>
+					date de création croissante
+					</option>
+                                        <option value='modif' <?php selected( 'sort','modif'); ?>>
+					date de modification croissante
+					</option>
+					<option value='asc' <?php selected( 'sort','asc'); ?> >
+					alphabet croissant
+					</option>
+					<option value='decr' <?php selected( 'sort','decr'); ?> >
+					alphabet décroissant
+					</option>
+				</select>
+                                
+
 				<div id="dim_spe">
 					<span class="choix"><input type='checkbox' name='activer' value='1' <?php selected('activer','1','checked'); ?> /> Activer Dimensions spéciales:</span>
 					<span class="choix">Largeur: <input type='text' name='largeur' value='500' size='4'/></span>
@@ -119,9 +138,7 @@ $urlsansindex = explode('index.php',$disurl);
 				
 			
 			
-			$debug.= "$disurlinfo <br/>
-		path: $path <br/>
-		pathnormal: $pathnormal <br/>";
+			
 			
 			$amois =array(
 				"01"=>"janvier",
@@ -140,6 +157,9 @@ $urlsansindex = explode('index.php',$disurl);
 			//localisation du dossier
 			
 		require'urlm_lib/controller.php';
+                $debug.= "$disurlinfo <br/>
+		path: $path <br/>
+		pathnormal: $pathnormal <br/>";
 		require'urlm_lib/scanner.php';
 				
 	if($pasfound==1){		$textes .="<span class='info'>Certains fichiers n'ont pas de deuxième version </span>";}				
@@ -154,7 +174,7 @@ $pourtextarea = $pathnormal ;
 
 				$corps .="
 					<textarea name='path' rows='4' cols='30'>$pourtextarea</textarea>
-				<input type='submit' value='envoyer' />
+				
 				</form>
 				</fieldset>
 				<div class='results'>

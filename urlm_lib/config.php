@@ -13,15 +13,15 @@
 //en cas d'envie d'afficher les données de débug et de config, mettre à 1 au lieu de 0.
 $montrer_config=0;
 $montrer_debug=0;
-		 
+$debug .='<h2> config </h2>';
 //adresses pour tester URL maker en local
-$localurl='http://localhost/url_maker';
-$localroot=''; //C:\Program Files\UwAmp2\www\url_maker
+$localurl='http://localhost/url_maker'; //http://localhost/url_maker
+$localroot='C:\wamp\www\url_maker'; //C:\wamp\www\url_maker
 
 //adresse ABSOLUE du dossier où se trouve cette page sur un serveur web.  ça ne fonctionnera pas sur un autre serveur. Regardez sur http://www.ailesse.info/~tykayn/bazar/kotlife pour une démo
 //servira à créer les URL à copier, par exemple:
 //mettez selon le nom de votre site  $disurl='http://monsite.com/urlmaker';   
-$disurl='http://tykayn.fr/public';
+$disurl='';
 
 //adresse RELATIVE du dossier où se trouve cette page sur un serveur web. par défaut vaut:   getcwd().'/'
 $disrel=getcwd().'/'; 
@@ -88,11 +88,10 @@ $browserrr
 ");
 
 $file ='urlm_lib/config_abs.conf';
-if(!file_exists( $file )){
-//echo"<span class='warning noconf'>Il n'y a pas de configuration de l'url absolue. Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</span>";
+if(!file_exists( $file ) && $index == 1){
 
  //teste si l'appli a été configuré avec $disurl
-	//header("Location: urlm_lib/setup.php") ;/* Redirection du navigateur */
+header("Location: urlm_lib/setup.php") ;/* Redirection du navigateur */
 		//	exit;
 		
 		}
@@ -105,4 +104,14 @@ if(!file_exists( $file )){
 		
 		$disurlinfo .= "<span class='success'>disurl: $disurl</span>";
 		}
-		
+/**
+ * 
+ * @param type $url
+ */
+function cleanpath($url){
+    $pathboot = str_replace('http://','hypertextprefix',$url);
+    $path = str_replace('//','/',$pathboot);
+    $path = str_replace("\\",'/',$path );
+    $path = str_replace('hypertextprefix','http://',$path);
+    return $path;
+}

@@ -1,5 +1,5 @@
 <?php
-
+$debug .='<h2> securite </h2>';
 	foreach ($_GET AS $key => $value)
 		{
 		$_GET[$key] = htmlspecialchars($value);
