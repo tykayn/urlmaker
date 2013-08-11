@@ -120,8 +120,8 @@ if( isset($_POST['sort']) ){
                                                             $debug.="<br/>test de $pathnormal.'/g/'.$v puis de $pathnormal.'/thumb/'.$v ";
                                                             if(file_exists($pathnormal.'/g/'.$v)){
                                                             $prethumb='[';
-                                                            $afterthumb='|'.$path.'g/'.$v.']';
-                                                            $add = ''.$prethumb.'((<span class="thumbimg">'.$path . $v.'</span>|'.$alt.'|C))<span class="grand">'.$afterthumb.'</span>'.$br.'<br/>';
+                                                            $afterthumb='|'.$path.'/g/'.$v.']';
+                                                            $add = ''.$prethumb.'((<span class="thumbimg">'.$path .'/'. $v.'</span>|'.$alt.'|C))<span class="grand">'.$afterthumb.'</span>'.$br.'<br/>';
                                                             $txtpropre = '[(('.$path.'/'.$v.'|'.$alt.'|C))'.$afterthumb.$br.'';
 
                                                             }
