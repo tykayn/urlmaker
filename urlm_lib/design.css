@@ -22,7 +22,8 @@ body {
     padding: 5px;
     width: 80%;
     max-width: 100%;
-    min-height: 50%;
+    min-width: 550px;
+    min-height: 1000px;
 
 }
 a:link {color: black;}
@@ -191,14 +192,23 @@ nav img{
 #options , .folders , #textes , .choix , .mini_img{
     clear: none;
 }
-#options , #folders {
+#credits{
+    display: block;
+}
+#options , #folders , #textes, #credits {
+    background: #fff;
     display: block;
     float: left;
-    padding-left:1%;
+    padding: 1%;
+    border-radius: 0.5em;
 }
 #textes{
     float: right;
     width: 40%;
+    min-width: 500px;
+    
+    word-break: break-all;
+
 }
 
 #folders{
