@@ -15,7 +15,7 @@ $montrer_config=0;
 $montrer_debug=0;
 $debug .='<h2> config </h2>';
 //adresses pour tester URL maker en local
-$localurl='http://localhost/url_maker'; //http://localhost/url_maker
+$localurl='http://localhost:8080/urlmaker'; //http://localhost/url_maker
 $localroot='C:\wamp\www\url_maker'; //C:\wamp\www\url_maker
 
 //adresse ABSOLUE du dossier où se trouve cette page sur un serveur web.  ça ne fonctionnera pas sur un autre serveur. Regardez sur http://www.ailesse.info/~tykayn/bazar/kotlife pour une démo

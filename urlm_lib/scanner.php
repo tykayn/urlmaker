@@ -29,6 +29,7 @@ if( isset($_POST['sort']) ){
     
 }
 
+$prem_img = 0;
 
         foreach($scan AS $k=>$v){
         //	$textes .='<br/> '.$k.' ->'.$v;
@@ -111,7 +112,9 @@ if( isset($_POST['sort']) ){
                                                 }
                                         else{
 //WIKI_____//WIKI_____//WIKI_____//WIKI_____//WIKI_____//WIKI_____//WIKI_____//WIKI_____//WIKI_____//WIKI_____//WIKI_____
+                                                    
 
+                                                            
                                                     if(isset($_POST["backreturn"]) && $_POST["backreturn"]==1){
                                                     $br='%%%';
                                                     }
@@ -122,16 +125,18 @@ if( isset($_POST['sort']) ){
                                                             $prethumb='[';
                                                             $afterthumb='|'.$path.'/g/'.$v.']';
                                                             $add = ''.$prethumb.'((<span class="thumbimg">'.$path .'/'. $v.'</span>|'.$alt.'|C))<span class="grand">'.$afterthumb.'</span>'.$br.'<br/>';
-                                                            $txtpropre = '[(('.$path.'/'.$v.'|'.$alt.'|C))'.$afterthumb.$br.'';
+                                                            
+
+                                                            
 
                                                             }
                                                             elseif(file_exists($pathnormal.'/thumb/'.$v)){
                                                                     $add = '[((<span class="thumbimg">'.$path.htmlspecialchars($_POST['path']).'/thumb/'.$v.'</span>|'.$alt.'|C))|<span class="grand">'.$path.'/'.$v.'</span>]'.$br.'<br/>';
-                                                                    $txtpropre = '[(('.$path.$_POST['path'].'/thumb/'.$v.'|'.$alt.'|C))|'.$path.'/'.$v.']'.$br.'';
+                                                                    $txtpropre = '[(('.$path.'/'.$dactuel.'/thumb/'.$v.'|'.$alt.'|C))|'.$path.'/'.$dactuel.'/'.$v.']'.$br.'';
                                                             }
                                                             else{
-                                                                    $add = '<span class="unfound">((<span class="thumbimg">'.$path.'/'.$v.'</span>|'.$alt.'|C))'.$br.'</span><br/>';
-                                                                    $txtpropre = '(('.$path.'/'.$v.'|'.$alt.'|C))'.$br.'';
+                                                                    $add = '<span class="unfound">((<span class="thumbimg">'.$path.'/'.$dactuel.'/'.$v.'</span>|'.$alt.'|C))'.$br.'</span><br/>';
+                                                                    $txtpropre = '(('.$path.'/'.$dactuel.'/'.$v.'|'.$alt.'|C))'.$br.'';
                                                             $pasfound=1;
 
                                                             }
@@ -142,11 +147,17 @@ if( isset($_POST['sort']) ){
                                                             $prethumb='<span class="unfound">';
                                                             $afterthumb='</span>';
                                                             $add = ''.$prethumb.'((<span class="thumbimg">'.$path.'/'.$v.'</span>|'.$alt.'|C))'.$afterthumb.$br.'<br/>';
-                                                            $txtpropre  = '(('.$path.'/'.$v.'|'.$alt.'|C))'.$br.'';
+                                                            $txtpropre  = '(('.$path.'/'.$dactuel.'/'.$v.'|'.$alt.'|C))'.$br.'';
                                                             $pasfound=1;
                                                     }
-
-
+                             //aperçu d'image pour un dossier à la première image qui passe
+                                                    if( $prem_img == 0 && preg_match("#jpg|png#i", $v)  ){
+                                                        $imgurl= $path .'/'.$dactuel.'/'. $v;
+                                                       $add = '<img src="'.$imgurl.'" class="mini_img" alt="'.$imgurl.'" >  <br/>
+                                                           ' . $add;
+                                                        $prem_img = 1;
+                                                    //    $txtpropre = '[(('.$path.'/'.$v.'|'.$alt.'|C))'.$afterthumb.$br.''; 
+                                                    }
                                                 }
                                                 //retirer les double slash sans virer le http:// dans $add
                                                 $add = str_replace('http://','hypertextprefix',$add);
@@ -154,8 +165,8 @@ if( isset($_POST['sort']) ){
                                                 $add = str_replace("\\",'/',$add );
                                                 $add = str_replace('hypertextprefix','http://',$add);
 
-                                                                                        $textes .= $add;
-                                                                                        $pourcopier .= $txtpropre;
+                                                $textes .= $add;
+                                                $pourcopier .= $add ; // $txtpropre;
 
                                         }
                                         else{

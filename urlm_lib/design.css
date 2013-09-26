@@ -56,7 +56,6 @@ h1   {
 	 font-size:14px;
 	}
 	.results{
-	  background: #fff;
 	  padding:5px;
 	  width: 300px;
 	}
@@ -198,4 +197,7 @@ font-family: courrier,verdana,arial;
 	.setup , .setup form{
 	width: 980px;
 	}
+        .mini_img{
+            width: 100px;
+        }
 	
