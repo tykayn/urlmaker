@@ -8,16 +8,16 @@
  * @example Visit http://artlemoine.com/medias/apps/url-maker/demo
  */
 body {
-    font-family: Euphemia,Calibri,Arial;
-    background:#0A2633;
+    font-family: Euphemia, Calibri, Arial;
+    background: #0A2633;
     font-size: 1em;
 }
 
-#main{
-    background:#D5DBE5;
+#main {
+    background: #D5DBE5;
     border: 2px solid #595959;
     border-radius: 10px 10px 10px 10px;
-    display:block;
+    display: block;
     margin: 0 auto;
     padding: 5px;
     width: 80%;
@@ -26,204 +26,20 @@ body {
     min-height: 1000px;
 
 }
-a:link {color: black;}
-a:visited {color: gray;}
-a:hover, a:focus, a:active  { 
-    background: #000;
-    color: #fcf5f1;
-}	
 
-h1   {
-    font-size: 1.5em;
-}
-
-.help{
-    /*background: none repeat scroll 0 0 #AACCFE;*/
-    /*border: 2px solid #442244;*/
-    padding: 10px;
-    /*position: fixed;*/
+.bouton_copier {
+    border-radius: 3px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /*position:absolute;*/
+    top: 100px;
     right: 0;
-    top: 14px;
-    z-index: 2;
-    border-radius:   5px 0 0 5px ;
-    display: inline;
-}
-.help:hover{
-    background: none repeat scroll 0 0 #fff;
-    border: 2px solid #884488;
-    box-shadow: 2px 2px 5px #dcdcdc;
-
-}
-form, fieldset {
-    background: #fff;
-    width:300px;
-    font-size:1.1em;
-}
-.results{
-    padding:5px;
-    /*width: 200px;*/
-}
-h2{
-    background: #fff;
-    font-size: 1.25em;
-    padding-left:20px;
-}
-.folders{
-    font-family:calibri,arial;
-    background: none repeat scroll 0 0 #EAE77E;
-    border: 2px solid #C6C243;
-
-    min-height: 283px;
-    /*width: 100px;*/
-}
-.folders a{
-    display:block;
-    padding-left: 8px;
-    font-size:1.5em;
-    margin-top:2em;
-}
-nav a{
-    display:inline-block;
-    font-size:1.2em;
-    padding: 2px 5px;
-}
-#options{
-    font-size:x-small;
-}
-.choix{
-    border-radius:2px;
-    display: block;
-}
-.choix:hover , textarea:hover,textarea:active{
-    background: #C0F9C5;
-}
-.unfound{
-    color:red;
-    background: #ddd;
-    font-style: italic;
-}
-.thumbimg{
-    color:brown;
-    border-bottom: 1px solid #3366ff;
-    font-size:0.9em;
-}
-.grand{
-    color:brown;
-    border-bottom:solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #00ff99;
-    font-size:1.1em;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px #ccc;
 }
 
-#textespropres{
-    display:none;}
-
-.bouton_copier{ border-radius:3px; display:inline-block;
-                width:50px;
-                height: 50px;
-                text-align:center;
-                /*position:absolute;*/
-                top:100px; right:0;
-                background-color: rgba(255,255,255,0.4);
-                box-shadow: 0 0 15px #ccc;
-}
-.bouton_copier:hover{ border:2px grey solid;}
-
-.info{
-    font-family: Georgia,Arial;
-    margin: 20px auto;
-    background: #fff;
-    padding:10px;
-    border:3px solid #FF7F23;
-    display:block;
-}
-.warning{
-    font-family: Georgia,Arial;
-    margin: 20px auto;
-    background: #fff;
-    padding:10px;
-    border:3px solid #e5a9a9;
-    display:block;
-    color: #e5a9a9;
-}
-.noconf{
-    /*position: absolute;*/
-    top:50px;
-    left:20%;
-    z-index: 20;
-    box-shadow: 0 0 2000px rgba(0,0,0,0.8);
-    width: 400px;
-}
-
-.success{
-    font-family: Georgia,Arial;
-    margin: 0 auto;
-    background: #B1FFA5;
-    padding:10px;
-    border:3px solid #40B24B;
-    display:block;
-}
-.chemin{
-    font-family: courrier,verdana,arial;
-    border-bottom:1px solid #FF7F23;
-
-    display: block;
-}
-input[type=text]{
-    color: #40B24B;
-}
-input[type=text]{
-    background: #E2FFE5;
-}
-#credits{
-    padding: 10px;
-    width: 300px;
-}
-
-.setup , .setup form{
-    width: 980px;
-}
-.mini_img{
-    width: 100px;
-}
-nav img{
-    height: 1em;
-}
-#options , .folders , #textes , .choix , .mini_img{
-    clear: none;
-}
-#credits{
-    display: block;
-}
-#options , #folders , #textes, #credits {
-    background: #fff;
-    display: block;
-    float: left;
-    padding: 1%;
-    border-radius: 0.5em;
-}
-#textes{
-    float: right;
-    width: 40%;
-    min-width: 500px;
-    
-    word-break: break-all;
-
-}
-
-#folders{
-    width:30%;
-}
-#options{
-    width:30%;
-}
-.textarea{
-    width: 100%;
-}
-
-h2{
-    margin:0 0 1em;
-}
-*{
-    box-sizing: border-box;
+.bouton_copier:hover {
+    border: 2px grey solid;
 }

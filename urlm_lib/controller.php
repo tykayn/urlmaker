@@ -1,4 +1,5 @@
 <?php
+
 $debug .='<h2> controller </h2>';
 $dossierscanned='';
 $dactuel = date('/Y/m').$amois[date('m')];
@@ -99,4 +100,6 @@ $path = __DIR__;
 				}
 				else{
 					$debug.="pathnormal ne se finit pas par /";;
-				} 
+				}
+
+$debug .= "$disurlinfo <br/> path: $path <br/> pathnormal: $pathnormal <br/>";
