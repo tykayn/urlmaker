@@ -175,12 +175,10 @@ if ($montrer_debug == 0) {
     $debug = '';
 }
 //template ici
-$pourtextarea = $pathnormal;
+$pourtextarea = trim($pathnormal);
 
 $corps .="
-    <textarea name='path' rows='4' cols='40'>
-        $pourtextarea
-    </textarea>
+    <textarea name='path' rows='4' cols='40'>$pourtextarea</textarea>
 
 </form>
 </fieldset>
