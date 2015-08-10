@@ -5,13 +5,13 @@
             <a href="urlm_lib/setup.php">Config</a>
         </h2>
         <input class="btn btn-primary btn-block" type='submit' value='envoyer'/>
-                    <span class="choix">
-                        <input type='checkbox' name='backreturn' value='1'
-                            <?php selected('backreturn', '1', 'checked'); ?>/> Retour à la ligne
-                    </span>
-                    <span class="choix">
-                        <input type='checkbox' name='thumb' value='0'/> sans /thumb ou /g.
-                    </span>
+            <span class="choix">
+                <input type='checkbox' name='backreturn' value='1'
+                    <?php selected('backreturn', '1', 'checked'); ?>/> Retour à la ligne
+            </span>
+            <span class="choix">
+                <input type='checkbox' name='thumb' value='0'/> sans /thumb ou /g.
+            </span>
         <select class="input" id="sel_lang" name='langage'>
             <option value='wiki'
                 <?php selected('langage', 'wiki'); ?>> WIKI
@@ -23,7 +23,7 @@
                 <?php selected('langage', 'html'); ?> > HTML
             </option>
         </select>
-
+        <br/>
         Ranger par
         <select class="input" id="sort" name='sort'>
             <option value='crea'

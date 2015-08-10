@@ -35,11 +35,11 @@ function selected($key = 'langage', $val, $retour = 'selected')
 
 $noConf = '';
 if (!file_exists($file)) {
-    $noConf += "<span class='warning noconf'>Il n'y a pas de configuration de l'url absolue.
-Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</span>";
+    $noConf += "<div class='warning noconf alert alert-warning'>Il n'y a pas de configuration de l'url absolue.
+Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</div>";
 } elseif (filesize($file) < 10) {
-    $noConf += "<span class='warning noconf'>l'url absolue est trop courte.
-Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</span>";
+    $noConf += "<div class='warning noconf alert alert-warning'>l'url absolue est trop courte.
+Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</div>";
 }
 
 $thumb = 1;

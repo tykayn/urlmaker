@@ -20,7 +20,7 @@ require 'urlm_lib/prepend.php';
     <link rel="stylesheet" media="screen" type="text/css" title="Mon design"
         href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" media="screen" type="text/css" title="Mon design"
-        href="bower_components/font-awesome/css/font-awesome.min.css"/>
+        href="bower_components/font-awesome/css/font-awesome.css"/>
     <link rel="shortcut icon" type="image/png" href="urlm_lib/img/favicon.png"/>
 
 </head>
@@ -34,13 +34,12 @@ require 'urlm_lib/prepend.php';
                 <a class="btn btn-primary"href='?p=top'>
                     <img src='urlm_lib/img/favicon.png' alt='URL maker logo'/> Accueil
                 </a>
-                |
                 <a class="btn btn-primary" href='?p=year'>Année <?php echo date('Y'); ?></a>
-                >
                 <a class="btn btn-primary" href='?p=month'> <?php echo date('m'); ?>e Mois</a>
                         <span class='help'>
                             <a href='urlm_lib/help/help.php'>
-                                | Aide <img src='urlm_lib/help/url_help.jpg' alt='URL maker aide'/>
+                                | Aide
+                                <i class="fa fa-help"></i>
                             </a>
                         </span>
             </nav>
