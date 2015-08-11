@@ -5,4 +5,5 @@ if ($dir_unfound == 1) {
 }
 
 
-echo $corps . print_r($_POST, true);
+echo $corps;
+//echo print_r($_POST, true);

@@ -5,6 +5,7 @@
             <a href="urlm_lib/setup.php">Config</a>
         </h2>
         <input class="btn btn-primary btn-block" type='submit' value='envoyer'/>
+        <br/>
             <span class="choix">
                 <input type='checkbox' name='backreturn' value='1'
                     <?php selected('backreturn', '1', 'checked'); ?>/> Retour à la ligne
@@ -42,7 +43,8 @@
 
 
         <div id="dim_spe">
-			<span class="choix"><input type='checkbox' name='activer' value='1'
+			<span class="choix">
+                <input type='checkbox' name='activer' value='1'
                     <?php selected('activer', '1', 'checked'); ?> /> Activer Dimensions spéciales:</span>
             <span class="choix">Largeur: <input type='text' name='largeur' value='500' size='4'/></span>
             <span class="choix">hauteur:<input type='text' name='hauteur' value='500' size='4'/> </span>
@@ -71,7 +73,10 @@ if ($montrer_debug == 0) {
 $pourtextarea = trim($pathnormal);
 
 $leForm .= "
+<br/>
 <textarea name='path' rows='4' cols='40'>$pourtextarea</textarea>
+<br/>
+<br/>
 <input class='btn btn-primary btn-block' type='submit' value='envoyer'/>
 </form>
 </fieldset>";
