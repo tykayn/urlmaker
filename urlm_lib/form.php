@@ -1,4 +1,4 @@
-<form class="well" method='POST' cible='index.php'>
+<form class="well" method='GET' cible='index.php'>
 
 	<fieldset id='options'>
 		<h2>Options |
