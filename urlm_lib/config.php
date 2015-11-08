@@ -10,10 +10,12 @@
  */
 
 //en cas d'envie d'afficher les données de débug et de config, mettre à 1 au lieu de 0.
-$montrer_config = 1;
-//$montrer_debug = 1;
-//$montrer_config = 0;
-//$montrer_debug = 0;
+$montrer_config = 0;
+$montrer_debug = 0;
+
+$montrer_config = 1; // montrer infos
+$montrer_debug = 1;
+
 $debug .= '<h2> config </h2>';
 $noConf = '';
 $thumb = 1;
