@@ -32,7 +32,7 @@ if ( $dir_unfound != 1 ) {
 
 	}
 	else {
-		log( 'nope pour le rangement de tableau' );
+		_log( 'nope pour le rangement de tableau' );
 	}
 
 
