@@ -9,7 +9,7 @@ $spe_dim = 0;
 /**
  * init de variables
  */
-$postlien = $prelien = $prehtml = $posthtml = $add = $lesFichiers = $leForm = $lesDossiers = $path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = $debug = '';
+$premiere_img = $postlien = $prelien = $prehtml = $posthtml = $add = $lesFichiers = $leForm = $lesDossiers = $path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = $debug = '';
 $dossiers = '';
 $textes = '';
 $br = $dir_unfound = '';

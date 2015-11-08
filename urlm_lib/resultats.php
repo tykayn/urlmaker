@@ -4,6 +4,7 @@
 $lesResultats .= " <div class='textes alert alert-success' id='textespropres'>
        <div class='pull-right'> $copybouton </div>
 
+<div id='premiere-img'>$premiere_img</div>
        <div id='pourcopier'><h2>images</h2> $pourcopier</div>
     </div>
 <div class='results'>

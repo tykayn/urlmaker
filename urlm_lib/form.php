@@ -67,7 +67,7 @@ $pourtextarea = trim( $pathnormal );
 
 $leForm .= "
 <br/>
-<textarea name='path' rows='4' cols='40'>$pourtextarea</textarea>
+<textarea class='textarea' name='path' rows='2' cols='40'>$pourtextarea</textarea>
 <br/>
 <br/>
 <input class='btn btn-primary btn-block' type='submit' value='envoyer'/>

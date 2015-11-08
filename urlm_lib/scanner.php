@@ -85,13 +85,20 @@ if ( $dir_unfound != 1 ) {
 
 			}
 			else {
-				$dossiers .= '<a href="?thumb=1&langage=' . $langage . '&path=' . $pathnormal . '/' . $v . '">' . $v . '</a>';
+				$dossiers .= '<a class="btn btn-block btn-success text-left" href="?thumb=1&langage=' . $langage . '&path=' . $pathnormal . '/' . $v . '">' . $v . '</a>';
 				//regroupement des textes � copier
 				////sinon ce sont des dossiers
 				//regroupement des liens de navigation
 			}
 
-
+			//  aperçu d'image pour un dossier à la première image qui passe
+			if ( $prem_img == 0 && preg_match( "#jpg|png#i" , $v ) ) {
+				$imgurl = $path . '/' . $dactuel . '/' . $v;
+				$premiere_img = '<img src="' . $imgurl . '" class="mini_img responsive-image" style="width: 100%; max-width:100%;" alt="' . $imgurl . '" >  <br/>
+                                                           ' . $add;
+				$prem_img = 1;
+				//    $txtpropre = '[(('.$path.'/'.$v.'|'.$alt.'|C))'.$afterthumb.$br.'';
+			}
 		}
 
 
