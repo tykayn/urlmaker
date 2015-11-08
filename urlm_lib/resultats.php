@@ -18,6 +18,6 @@ $lesResultats .= " <div class='textes alert alert-success' id='textespropres'>
     </div>
     $config_infos
 </div>
-<p> $debug </p>
+<p> $GLOBALS[debug] </p>
 
 				<div id='lefichiers'>$lesFichiers </div>";

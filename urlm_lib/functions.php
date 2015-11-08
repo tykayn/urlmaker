@@ -1,12 +1,12 @@
 <?php
 
-$debug .= '<h2> index </h2>';
+$GLOBALS['debug'] = '<h2> index </h2>';
 /**
  * fonctions à utiliser partout
  */
 
 function _log( $msg ) {
-	$debug .= '<br> <i class="fa fa-circle"></i> ' . $msg;
+	$GLOBALS['debug'] .= '<br> <i class="fa fa-circle"></i> ' . $msg;
 }
 
 /**
