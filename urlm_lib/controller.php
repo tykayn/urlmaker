@@ -4,6 +4,8 @@ _log( '<h2> controller </h2>' );
 $dossierscanned = '';
 $dactuel = date( '/Y/m' ) . $amois[ date( 'm' ) ];
 
+$relativeFolderURL = '';
+
 $path = __DIR__ . '/../../';
 //si y'a pas de dossier défini ET qu'il existe un dossier actuel y aller, sinon aller à la racine
 //si y'a un dossier défini aller a ce dossier
@@ -16,7 +18,10 @@ if ( isset( $_GET[ 'path' ] ) ) {
 	if ( isset( $postedPath ) && !empty( $postedPath ) ) {
 		$dossierscanned = str_replace( $disrel , '' , $postedPath );
 		$path = cleanpath( $postedPath );
+		$relativeFolderURL = '/'.str_replace($disrel,'',$postedPath);
 		_log( '#1# $_POST[\'path\'] $path=' . $path );
+		_log( ' $disrel : ' . $disrel );
+		_log( ' dossier publique $relativeFolderURL : ' . $relativeFolderURL );
 	}
 	elseif ( isset( $_GET[ 'path' ] ) && !empty( $_GET[ 'path' ] ) ) {
 		$dossierscanned = str_replace( $disrel , '' , $_GET[ 'path' ] );
@@ -28,10 +33,12 @@ elseif ( isset( $_GET[ 'p' ] ) ) {
 	$partie = $_GET[ 'p' ];
 	if ( isset( $partie ) && $partie == "year" ) {
 		$path = getcwd() . date( '/Y/' );
+		$relativeFolderURL = date( '/Y/' );
 		_log( '#2# year $path=' . $path );
 	}
 	elseif ( isset( $partie ) && $partie == "month" ) {
 		$path = getcwd() . date( '/Y/m' ) . $amois[ date( 'm' ) ];
+		$relativeFolderURL = date( '/Y/m' ) . $amois[ date( 'm' ) ];
 		_log( '#5# month $path= ' . $path );
 	}
 	elseif ( isset( $partie ) && $partie == "top" ) {

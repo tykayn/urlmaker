@@ -1,4 +1,6 @@
 <?php
+
+
 if ( isset( $_POST[ "backreturn" ] ) && $_POST[ "backreturn" ] == 1 ) {
 	$br = '%%%';
 }
@@ -13,12 +15,15 @@ if ( $thumb == 1 ) {
 
 	}
 	elseif ( file_exists( $pathnormal . '/thumb/' . $v ) ) {
-		$add = '[((<span class="thumbimg">' . $path . htmlspecialchars( $_POST[ 'path' ] ) . '/thumb/' . $v . '</span>|' . $alt . '|C))|<span class="grand">' . $path . '/' . $v . '</span>]' . $br . '<br/>';
-		$txtpropre = '[((' . $path . '/' . $dactuel . '/thumb/' . $v . '|' . $alt . '|C))|' . $path . '/' . $dactuel . '/' . $v . ']' . $br . '';
+		$add = '[((<span class="thumbimg">' . $path . '<span class=relFolder>'.$relativeFolderURL . '</span>/thumb/' . $v . '</span>|' . $alt . '|C))|<span class="grand">' . $path . '<span class=relFolder>'.$relativeFolderURL . '</span>/' . $v . '</span>]' . $br . '<br/>';
+//		$txtpropre = '[((' . $path . '/' . $dactuel . '/thumb/' . $v . '|' . $alt . '|C))|' . $path . '/' . $dactuel . '/' . $v . ']' . $br . '';
+		$txtpropre = 'EEEEEEE [((' . $path . '<span class=relFolder>'.$relativeFolderURL . '</span>/thumb/' . $v . '|' . $alt . '|C))|' . $path . '<span class=relFolder>'.$relativeFolderURL . '</span>/' . $v . ']' . $br . '';
 	}
 	else {
-		$add = '<span class="unfound">((<span class="thumbimg">' . $path . '/' . $dactuel . '/' . $v . '</span>|' . $alt . '|C))' . $br . '</span><br/>';
-		$txtpropre = '((' . $path . '/' . $dactuel . '/' . $v . '|' . $alt . '|C))' . $br . '';
+//		$add = '<span class="unfound">((<span class="thumbimg">' . $path . '/' . $dactuel . '/' . $v . '</span>|' . $alt . '|C))' . $br . '</span><br/>';
+		$add = '<span class="unfound">((<span class="thumbimg">' . $path . '/' . $relativeFolderURL . '/' . $v . '</span>|' . $alt . '|C))' . $br . '</span><br/>';
+//		$txtpropre = '((' . $path . '/' . $dactuel . '/' . $v . '|' . $alt . '|C))' . $br . '';
+		$txtpropre = '((' . $path . '/' . $relativeFolderURL . '/' . $v . '|' . $alt . '|C))' . $br . '';
 		$pasfound = 1;
 
 	}

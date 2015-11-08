@@ -52,3 +52,10 @@ textarea, input, button, a {
 textarea {
     width: 100%;
 }
+
+.thumbimg{
+    /*color: darkblue;*/
+}
+.relFolder{
+    color: orangered !important;
+}
