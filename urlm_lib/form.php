@@ -24,8 +24,7 @@
                 <?php selected('langage', 'html'); ?> > HTML
             </option>
         </select>
-        <br/>
-        Ranger par
+        <br/> Ranger par
         <select class="input" id="sort" name='sort'>
             <option value='crea'
                 <?php selected('sort', 'crea'); ?>> date de création croissante
@@ -50,7 +49,6 @@
             <span class="choix">hauteur:<input type='text' name='hauteur' value='500' size='4'/> </span>
         </div>
 <?php
-
 
 
 //localisation du dossier
@@ -80,7 +78,6 @@ $leForm .= "
 <input class='btn btn-primary btn-block' type='submit' value='envoyer'/>
 </form>
 </fieldset>";
-
 
 
 ?>

@@ -43,3 +43,11 @@ body {
 .bouton_copier:hover {
     border: 2px grey solid;
 }
+
+textarea, input, button, a {
+    padding: 0.5em 1em;
+}
+
+textarea {
+    width: 100%;
+}

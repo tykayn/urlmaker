@@ -31,7 +31,7 @@ require 'urlm_lib/prepend.php';
     <div class="row">
         <div class="col-lg-4">
             <nav>
-                <a class="btn btn-primary"href='?p=top'>
+                <a class="btn btn-primary" href='?p=top'>
                     <img src='urlm_lib/img/favicon.png' alt='URL maker logo'/> Accueil
                 </a>
                 <a class="btn btn-primary" href='?p=year'>Année <?php echo date('Y'); ?></a>
@@ -52,7 +52,7 @@ require 'urlm_lib/prepend.php';
         <div class="col-lg-4">
             <?php
             require('urlm_lib/dossiers.php');
-//            echo $msg;
+            //            echo $msg;
             ?>
 
         </div>
@@ -60,12 +60,12 @@ require 'urlm_lib/prepend.php';
             <div class="well">
 
 
-            <?php
+                <?php
 
-            require('urlm_lib/resultats.php');
-            echo $lesResultats;
-            ?>
-        </div>
+                require('urlm_lib/resultats.php');
+                echo $lesResultats;
+                ?>
+            </div>
         </div>
 
     </div>

@@ -1,6 +1,6 @@
 <?php
 $index = 1;
-$lesFichiers =$leForm= $lesDossiers = $path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = $debug = '';
+$lesFichiers = $leForm = $lesDossiers = $path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = $debug = '';
 $dossiers = '';
 $textes = '';
 $br = $dir_unfound = '';
