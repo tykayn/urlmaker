@@ -2,25 +2,25 @@
 ||				||
 ||				||
 ||	URL maker		||
-||	téléchargé sur		||
+||	tï¿½lï¿½chargï¿½ sur		||
 ||   http://artlemoine.com	||
 ||				||
-||	graphiste		||
-||	illustrateur		||
-||	web concepteur		||
+||	web developpeur		||
 ||				||
   ==============================
 
 
 placez tous les fichiers et dossiers de cette archive url_maker.zip dans un dossier sur votre serveur web.
-Configuration, mode d'emploi, toutes les réponses à vos questions sont dans:
+Configuration, mode d'emploi, toutes les rï¿½ponses ï¿½ vos questions sont dans:
 help/help.php
 
 
-Si vous ne trouvez pas de réponse à vos interrogations dans l'aide ou pour tout contact constructif
+Si vous ne trouvez pas de rï¿½ponse ï¿½ vos interrogations dans l'aide ou pour tout contact constructif
 vous pouvez me contacter en vous rendant sur:
 http://artlemoine.com/contact
 
 
 Amusez vous bien!
 -Baptiste Lemoine-
+
+[http://www.github.com/tykayn]

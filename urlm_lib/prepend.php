@@ -1,19 +1,23 @@
 <?php
+
 $index = 1;
-$lesFichiers = $leForm = $lesDossiers = $path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = $debug = '';
+$lien_grand = 0;
+$langage = 'wiki'; // par défaut
+$spe_dim = 0;
+
+
+/**
+ * init de variables
+ */
+$postlien = $prelien = $prehtml = $posthtml = $add = $lesFichiers = $leForm = $lesDossiers = $path = $disurlinfo = $corps = $msg = $path = $pathnormal = $copybouton = $debug = '';
 $dossiers = '';
 $textes = '';
 $br = $dir_unfound = '';
-$lien_grand = 0;
-$langage = 'wiki';
-$spe_dim = 0;
 $largeur = '';
 $hauteur = '';
 $pourcopier = '';
-
 $prethumb = '';
 $afterthumb = '';
-$postlien = $prelien = $prehtml = $posthtml = $add = '';
 $debug = '';
 $pasfound = 0;
 $amois = array(
@@ -34,18 +38,13 @@ function selected($key = 'langage', $val, $retour = 'selected')
 }
 
 $noConf = '';
-if (!file_exists($file)) {
-    $noConf += "<div class='warning noconf alert alert-warning'>Il n'y a pas de configuration de l'url absolue.
-Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</div>";
-} elseif (filesize($file) < 10) {
-    $noConf += "<div class='warning noconf alert alert-warning'>l'url absolue est trop courte.
-Cliquez sur <a href='urlm_lib/setup.php'>Config</a> pour régler cela.</div>";
-}
 
 $thumb = 1;
 if (isset($_POST['thumb']) && $_POST['thumb'] == 0) {
     $thumb = 0;
 }
 //si l'url choppée contient index.php, on retire tout ça
-$urlsansindex = explode('index.php', $disurl);
+$boom = explode('index.php', $disurl);
+$urlsansindex = $boom[0];
 
+require('check_config.php');

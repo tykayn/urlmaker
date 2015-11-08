@@ -4,7 +4,7 @@ $debug .= '<h2> controller </h2>';
 $dossierscanned = '';
 $dactuel = date('/Y/m') . $amois[date('m')];
 
-$path = __DIR__;
+$path = __DIR__ .'/../../';
 //si y'a pas de dossier défini ET qu'il existe un dossier actuel y aller, sinon aller à la racine
 //si y'a un dossier défini aller a ce dossier
 if (isset($_POST['path']) && !empty($_POST['path'])) {
