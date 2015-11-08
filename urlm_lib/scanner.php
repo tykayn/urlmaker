@@ -187,3 +187,6 @@ if ($dir_unfound != 1) {
 
     }
 }
+else{
+    _log('pas de dossier trouvé!');
+}

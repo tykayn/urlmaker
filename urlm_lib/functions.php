@@ -4,7 +4,6 @@
  * fonctions à utiliser partout
  */
 
-
 function _log($msg){
     $debug .= '<br> <i class="fa fa-circle"></i> '.$msg;
 }
@@ -55,19 +54,6 @@ function get_user_browser()
 }
 
 /**
- * détection du langage d'URL choisi pour la présélectionner
- * @param string $key
- * @param $val
- * @param string $retour
- */
-function selected($key = 'langage', $val, $retour = 'selected')
-{
-    if (isset($_POST[$key]) && $_POST[$key] == $val) {
-        echo $retour;
-    }
-}
-
-/**
  *
  * @param type $url
  */
@@ -84,34 +70,52 @@ function cleanpath($url)
  * @param $varPost
  * @return array
  */
-function ranger_tableau($varPost)
+//function ranger_tableau($varPost)
+//{
+//    $tmp = [];
+//    $scan = [];
+//
+//    if (isset($_POST[$varPost])) {
+//        if ($_POST[$varPost] == 'modif') {
+//            foreach ($scan as $f) {
+//                $tmp[basename($f)] = filemtime($pathnormal . '/' . $f);  //ranger fichiers par date de création
+//            }
+//            asort($tmp);
+//            $scan = array_keys($tmp);
+//            // print_r($tmp);
+//        } elseif ($_POST[$varPost] == 'crea') {
+//            foreach ($scan as $f) {
+//                $tmp[basename($f)] = filectime($pathnormal . '/' . $f);  //ranger fichiers par date de création
+//            }
+//            asort($tmp);
+//            $scan = array_keys($tmp);
+//        } elseif ($_POST[$varPost] == 'desc') {
+//            arsort($scan);
+//        } elseif ($_POST[$varPost] == 'asc') {
+//            sort($scan);
+//        }
+//
+//    }
+//    else{
+//        log('nope pour le rangement de tableau');
+//    }
+//    return $scan;
+//}
+
+
+/**
+ * fonctions pour le template
+ */
+
+/**
+ * détection du langage d'URL choisi pour la présélectionner dans le template
+ * @param string $key
+ * @param $val
+ * @param string $retour
+ */
+function selected($key = 'langage', $val, $retour = 'selected')
 {
-    $tmp = [];
-    $scan = [];
-
-    if (isset($_POST[$varPost])) {
-        if ($_POST[$varPost] == 'modif') {
-            foreach ($scan as $f) {
-                $tmp[basename($f)] = filemtime($pathnormal . '/' . $f);  //ranger fichiers par date de création
-            }
-            asort($tmp);
-            $scan = array_keys($tmp);
-            // print_r($tmp);
-        } elseif ($_POST[$varPost] == 'crea') {
-            foreach ($scan as $f) {
-                $tmp[basename($f)] = filectime($pathnormal . '/' . $f);  //ranger fichiers par date de création
-            }
-            asort($tmp);
-            $scan = array_keys($tmp);
-        } elseif ($_POST[$varPost] == 'desc') {
-            arsort($scan);
-        } elseif ($_POST[$varPost] == 'asc') {
-            sort($scan);
-        }
-
+    if (isset($_POST[$key]) && $_POST[$key] == $val) {
+        echo $retour;
     }
-    else{
-        log('nope pour le rangement de tableau');
-    }
-    return $scan;
 }

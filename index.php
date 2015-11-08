@@ -52,9 +52,11 @@ require 'urlm_lib/prepend.php';
         <div class="col-lg-4">
             <?php
             require('urlm_lib/dossiers.php');
-            //            echo $msg;
             ?>
-
+            <div id='folders' class='alert alert-success'>
+                <h2>Dossiers</h2>
+               <?php echo  $dossiers ; ?>
+            </div>
         </div>
         <div class="col-lg-4">
             <div class="well">
