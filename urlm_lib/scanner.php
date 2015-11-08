@@ -4,27 +4,10 @@ if ($dir_unfound != 1) {
 
 
     // rangement du tableau de scan
-    if (isset($_POST['sort'])) {
-        if ($_POST['sort'] == 'modif') {
-            foreach ($scan as $f) {
-                $tmp[basename($f)] = filemtime($pathnormal . '/' . $f);  //ranger fichiers par date de création
-            }
-            asort($tmp);
-            $scan = array_keys($tmp);
-            // print_r($tmp);
-        } elseif ($_POST['sort'] == 'crea') {
-            foreach ($scan as $f) {
-                $tmp[basename($f)] = filectime($pathnormal . '/' . $f);  //ranger fichiers par date de création
-            }
-            asort($tmp);
-            $scan = array_keys($tmp);
-        } elseif ($_POST['sort'] == 'desc') {
-            arsort($scan);
-        } elseif ($_POST['sort'] == 'asc') {
-            sort($scan);
-        }
 
-    }
+    $scan = ranger_tableau('sort');
+
+
 
     $prem_img = 0;
 

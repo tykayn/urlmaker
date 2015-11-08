@@ -51,10 +51,7 @@
 <?php
 
 
-//localisation du dossier
 
-require 'urlm_lib/controller.php';
-require 'urlm_lib/scanner.php';
 
 if ($pasfound == 1) {
     $textes .= "

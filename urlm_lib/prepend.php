@@ -20,6 +20,8 @@ $prethumb = '';
 $afterthumb = '';
 $debug = '';
 $pasfound = 0;
+$debug .= '<h2> index </h2>';
+
 $amois = array(
     "01" => "janvier", "02" => "fevrier", "03" => "mars", "04" => "avril",
     "05" => "mai", "06" => "juin", "07" => "juillet", "08" => "aout", "09" => "septembre",
@@ -28,23 +30,13 @@ $amois = array(
 
 require 'urlm_lib/securite.php';
 require 'urlm_lib/config.php';
-$debug .= '<h2> index </h2>';
 
-function selected($key = 'langage', $val, $retour = 'selected')
-{ // détection du langage d'URL choisi pour la présélectionner
-    if (isset($_POST[$key]) && $_POST[$key] == $val) {
-        echo $retour;
-    }
-}
-
-$noConf = '';
-
-$thumb = 1;
-if (isset($_POST['thumb']) && $_POST['thumb'] == 0) {
-    $thumb = 0;
-}
-//si l'url choppée contient index.php, on retire tout ça
-$boom = explode('index.php', $disurl);
-$urlsansindex = $boom[0];
-
+require('functions.php');
 require('check_config.php');
+
+//localisation du dossier
+
+require 'urlm_lib/controller.php';
+require 'urlm_lib/scanner.php';
+
+

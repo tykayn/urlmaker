@@ -13,6 +13,8 @@
 $montrer_config = 1;
 $montrer_debug = 1;
 $debug .= '<h2> config </h2>';
+$noConf = '';
+$thumb = 1;
 //adresses pour tester URL maker en local
 $localurl = 'http://localhost/urlmaker'; // http://localhost/url_maker
 $localroot = 'C:\wamp\www\url_maker'; //    C:\wamp\www\url_maker  version windows avec wamp
@@ -35,15 +37,4 @@ $blognewposturl = '';
 
 date_default_timezone_set('Europe/Paris');
 
-/**
- *
- * @param type $url
- */
-function cleanpath($url)
-{
-    $pathboot = str_replace('http://', 'hypertextprefix', $url);
-    $path = str_replace('//', '/', $pathboot);
-    $path = str_replace("\\", '/', $path);
-    $path = str_replace('hypertextprefix', 'http://', $path);
-    return $path;
-}
+

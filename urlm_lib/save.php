@@ -8,8 +8,11 @@ if (!file_exists($file)) {
 } else {
     $corps .= "édition du fichier de config.";
 }
-file_put_contents($file, $_POST['disurl']) OR die('Ho noez! impossible d\'écrire le fichier. Vérifiez que vous avez donné des droits suffisants en écriture aux fichiers d\'URL maker ');
-$corps .= "<span class='success'>$_POST[disurl] <br/>est la nouvelle adresse absolue pour lier les images. Cette donnée est stockée dans $file </span>";
+file_put_contents($file, $_POST['disurl']) OR
+die('Ho noez! impossible d\'écrire le fichier. Vérifiez que vous avez donné des droits suffisants en écriture aux fichiers d\'URL maker ');
+$corps .= "<span class='success'>$_POST[disurl]
+<br/>est la nouvelle adresse absolue pour lier les images.
+Cette donnée est stockée dans <strong>$file</strong> </span>";
 ?>
 
 
