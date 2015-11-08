@@ -11,8 +11,8 @@ $path = __DIR__ . '/../../';
 //var_dump($_POST);
 
 
-if ( isset( $_POST[ 'path' ] ) ) {
-	$postedPath = $_POST[ 'path' ];
+if ( isset( $_GET[ 'path' ] ) ) {
+	$postedPath = $_GET[ 'path' ];
 	if ( isset( $postedPath ) && !empty( $postedPath ) ) {
 		$dossierscanned = str_replace( $disrel , '' , $postedPath );
 		$path = cleanpath( $postedPath );

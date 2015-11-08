@@ -6,7 +6,7 @@ if ( $dir_unfound != 1 ) {
 	// rangement du tableau de scan
 
 //    $scan = ranger_tableau('sort');
-
+	$varPost = 'sort';
 	if ( isset( $_POST[ $varPost ] ) ) {
 		if ( $_POST[ $varPost ] == 'modif' ) {
 			foreach ( $scan as $f ) {
