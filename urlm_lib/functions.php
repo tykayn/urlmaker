@@ -1,5 +1,6 @@
 <?php
 
+$debug .= '<h2> index </h2>';
 /**
  * fonctions à utiliser partout
  */

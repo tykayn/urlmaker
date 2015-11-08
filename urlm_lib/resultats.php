@@ -1,8 +1,10 @@
 <?php
 
 
-$lesResultats .= " <div class='textes' id='textespropres'>
-       $copybouton $pourcopier
+$lesResultats .= " <div class='textes alert alert-success' id='textespropres'>
+       <div class='pull-right'> $copybouton </div>
+
+       <div> $pourcopier</div>
     </div>
 <div class='results'>
 

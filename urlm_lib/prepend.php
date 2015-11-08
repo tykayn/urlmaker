@@ -21,7 +21,7 @@ $lesResultats = '';
 $afterthumb = '';
 $debug = '';
 $pasfound = 0;
-$debug .= '<h2> index </h2>';
+
 
 $amois = array(
     "01" => "janvier", "02" => "fevrier", "03" => "mars", "04" => "avril",

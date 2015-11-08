@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25c6d285-546f-4423-a129-cde04b1af42f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2015/11novembre/image1.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/functions.php" afterPath="$PROJECT_DIR$/urlm_lib/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/prepend.php" afterPath="$PROJECT_DIR$/urlm_lib/prepend.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/resultats.php" afterPath="$PROJECT_DIR$/urlm_lib/resultats.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/scanner.php" afterPath="$PROJECT_DIR$/urlm_lib/scanner.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="urlmaker.iws" />
@@ -41,21 +42,19 @@
       <file leaf-file-name="prepend.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urlm_lib/prepend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/urlm_lib/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
-              <folding>
-                <element signature="e#7#46#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.03348214">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41423357">
-              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            <state vertical-scroll-proportion="-4.137931">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -95,14 +94,16 @@
       <file leaf-file-name="resultats.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urlm_lib/resultats.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding>
-                <marker date="1447012808744" expanded="true" signature="65:107" placeholder="..." />
-                <marker date="1447012808744" expanded="true" signature="129:131" placeholder="..." />
-                <marker date="1447012808744" expanded="true" signature="129:348" placeholder="..." />
-                <marker date="1447012808744" expanded="true" signature="184:323" placeholder="..." />
-                <marker date="1447012808744" expanded="true" signature="197:261" placeholder="..." />
+                <marker date="1447013514288" expanded="true" signature="85:104" placeholder="..." />
+                <marker date="1447013514288" expanded="true" signature="85:115" placeholder="..." />
+                <marker date="1447013514288" expanded="true" signature="85:179" placeholder="..." />
+                <marker date="1447013514288" expanded="true" signature="150:168" placeholder="..." />
+                <marker date="1447013514288" expanded="true" signature="201:420" placeholder="..." />
+                <marker date="1447013514288" expanded="true" signature="256:395" placeholder="..." />
+                <marker date="1447013514288" expanded="true" signature="269:333" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -111,8 +112,8 @@
       <file leaf-file-name="form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urlm_lib/form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state vertical-scroll-proportion="-43.75">
+              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -145,14 +146,15 @@
         <option value="$PROJECT_DIR$/urlm_lib/dossiers.php" />
         <option value="$PROJECT_DIR$/urlm_lib/save.php" />
         <option value="$PROJECT_DIR$/urlm_lib/form.php" />
-        <option value="$PROJECT_DIR$/urlm_lib/prepend.php" />
         <option value="$PROJECT_DIR$/urlm_lib/check_config.php" />
         <option value="$PROJECT_DIR$/urlm_lib/config.php" />
         <option value="$PROJECT_DIR$/urlm_lib/design.css" />
-        <option value="$PROJECT_DIR$/urlm_lib/functions.php" />
         <option value="$PROJECT_DIR$/urlm_lib/scanner.php" />
-        <option value="$PROJECT_DIR$/urlm_lib/resultats.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/urlm_lib/resultats.php" />
+        <option value="$PROJECT_DIR$/urlm_lib/prepend.php" />
+        <option value="$PROJECT_DIR$/urlm_lib/functions.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -239,6 +241,10 @@
               <option name="myItemId" value="2015" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="11novembre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -297,7 +303,7 @@
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32948583" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -424,22 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urlm_lib/design.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urlm_lib/form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urlm_lib/scanner.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3626373">
@@ -450,42 +440,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urlm_lib/functions.php">
+    <entry file="file://$PROJECT_DIR$/urlm_lib/form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <element signature="e#7#46#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-43.75">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urlm_lib/prepend.php">
+    <entry file="file://$PROJECT_DIR$/urlm_lib/design.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.137931">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/urlm_lib/resultats.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
-            <marker date="1447012808744" expanded="true" signature="65:107" placeholder="..." />
-            <marker date="1447012808744" expanded="true" signature="129:131" placeholder="..." />
-            <marker date="1447012808744" expanded="true" signature="129:348" placeholder="..." />
-            <marker date="1447012808744" expanded="true" signature="184:323" placeholder="..." />
-            <marker date="1447012808744" expanded="true" signature="197:261" placeholder="..." />
+            <marker date="1447013514288" expanded="true" signature="85:104" placeholder="..." />
+            <marker date="1447013514288" expanded="true" signature="85:115" placeholder="..." />
+            <marker date="1447013514288" expanded="true" signature="85:179" placeholder="..." />
+            <marker date="1447013514288" expanded="true" signature="150:168" placeholder="..." />
+            <marker date="1447013514288" expanded="true" signature="201:420" placeholder="..." />
+            <marker date="1447013514288" expanded="true" signature="256:395" placeholder="..." />
+            <marker date="1447013514288" expanded="true" signature="269:333" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/urlm_lib/prepend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41423357">
-          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlm_lib/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03348214">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>
