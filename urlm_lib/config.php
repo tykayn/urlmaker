@@ -16,7 +16,7 @@ $montrer_debug = 0;
 $montrer_config = 1; // montrer infos
 $montrer_debug = 1;
 
-$debug .= '<h2> config </h2>';
+$debug = '<h2> debug config </h2>';
 $noConf = '';
 $thumb = 1;
 /**

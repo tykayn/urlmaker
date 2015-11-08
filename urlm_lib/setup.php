@@ -1,7 +1,7 @@
 <?php
 //require'securite.php';
 $disurl = '';
-require 'config.php';
+require 'functions.php';
 $corps = '';
 $url = curPageURL();
 $url = str_replace( 'urlm_lib/setup.php' , '' , $url );
