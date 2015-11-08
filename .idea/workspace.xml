@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25c6d285-546f-4423-a129-cde04b1af42f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urlm_lib/scans/bbcode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urlm_lib/scans/html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/scanner.php" afterPath="$PROJECT_DIR$/urlm_lib/scanner.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/scans/wiki.php" afterPath="$PROJECT_DIR$/urlm_lib/scans/wiki.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="urlmaker.iws" />
@@ -41,10 +38,10 @@
       <file leaf-file-name="scanner.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/urlm_lib/scanner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5345455">
-              <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.685567">
+              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
               <folding>
-                <marker date="1447016619300" expanded="true" signature="3389:3627" placeholder="..." />
+                <marker date="1447017229812" expanded="true" signature="2717:2955" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -397,7 +394,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
           <folding>
-            <marker date="1447016619300" expanded="true" signature="3389:3627" placeholder="..." />
+            <marker date="1447017229812" expanded="true" signature="2717:2955" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -473,7 +470,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
           <folding>
-            <marker date="1447016619300" expanded="true" signature="3389:3627" placeholder="..." />
+            <marker date="1447017229812" expanded="true" signature="2717:2955" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -686,10 +683,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/urlm_lib/scanner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5345455">
-          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.685567">
+          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
           <folding>
-            <marker date="1447016619300" expanded="true" signature="3389:3627" placeholder="..." />
+            <marker date="1447017229812" expanded="true" signature="2717:2955" placeholder="..." />
           </folding>
         </state>
       </provider>
