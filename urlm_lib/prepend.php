@@ -17,6 +17,7 @@ $largeur = '';
 $hauteur = '';
 $pourcopier = '';
 $prethumb = '';
+$lesResultats = '';
 $afterthumb = '';
 $debug = '';
 $pasfound = 0;

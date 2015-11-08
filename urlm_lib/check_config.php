@@ -23,7 +23,7 @@ Adresse de blog nouveau post: $blognewposturl
 $browserrr
 ");
 
-$file = 'urlm_lib/config_abs.conf';
+
 //teste si l'appli a été configuré avec $disurl
 if (!file_exists($file) && $index == 1) {
 

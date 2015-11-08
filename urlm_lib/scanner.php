@@ -13,7 +13,7 @@ if ($dir_unfound != 1) {
 
     foreach ($scan AS $k => $v) {
         //	$textes .='<br/> '.$k.' ->'.$v;
-        $debug .= "<br/> scan $k=>$v ";
+        _log("<br/> scan $k=>$v ");
         //si diff�rent de . ou ..//exclut les deux 1e lignes des dossiers
         if ($v != '.' && $v != '..') {
             if (preg_match("#\.|\.\.]#", $v)) {
@@ -56,7 +56,7 @@ if ($dir_unfound != 1) {
                         }
                         //pour lien vers petit ou grand. test du dossier G, puis du dossier THUMB
                         if ($thumb == 1) {
-                            $debug .= "<br/>test de $pathnormal.'/g/'.$v puis de $pathnormal.'/g/'.$v ";
+                            _log("<br/>test de $pathnormal.'/g/'.$v puis de $pathnormal.'/g/'.$v ");
                             if (file_exists($pathnormal . '/g/' . $v)) {
                                 $prethumb = '[';
                                 $afterthumb = '|' . $path . '/g/' . $v . ']';
@@ -73,7 +73,7 @@ if ($dir_unfound != 1) {
                             }
 
                         } else {
-                            $debug .= "<br/>dossier ";
+                            _log("<br/>dossier ");
                             $prethumb = '<span class="unfound">';
                             $afterthumb = '</span>';
                             $add = '' . $prethumb . '((<span class="thumbimg">' . $path . '/' . $v . '</span>|' . $alt . '|C))' . $afterthumb . $br . '<br/>';
@@ -94,7 +94,7 @@ if ($dir_unfound != 1) {
                     }
                     //pour lien vers petit ou grand. test du dossier G, puis du dossier THUMB
                     if ($thumb == 1) {
-                        $debug .= "<br/>test de $pathnormal.'/g/'.$v puis de $pathnormal.'/thumb/'.$v ";
+                        _log("<br/>test de $pathnormal.'/g/'.$v puis de $pathnormal.'/thumb/'.$v ");
                         if (file_exists($pathnormal . '/g/' . $v)) {
                             $prethumb = '[';
                             $afterthumb = '|' . $path . '/g/' . $v . ']';
@@ -112,7 +112,7 @@ if ($dir_unfound != 1) {
                         }
 
                     } else {
-                        $debug .= "<br/>dossier ";
+                        _log("<br/>dossier ");
                         $prethumb = '<span class="unfound">';
                         $afterthumb = '</span>';
                         $add = '' . $prethumb . '((<span class="thumbimg">' . $path . '/' . $v . '</span>|' . $alt . '|C))' . $afterthumb . $br . '<br/>';

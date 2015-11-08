@@ -15,7 +15,10 @@ $montrer_debug = 1;
 $debug .= '<h2> config </h2>';
 $noConf = '';
 $thumb = 1;
-//adresses pour tester URL maker en local
+/**
+ * adresses pour tester URL maker en local
+ */
+$file = 'urlm_lib/config_abs.conf';     // fichier de config du chemin publique des images
 $localurl = 'http://localhost/urlmaker'; // http://localhost/url_maker
 $localroot = 'C:\wamp\www\url_maker'; //    C:\wamp\www\url_maker  version windows avec wamp
 $localroot = 'C:\wamp\www\url_maker'; //    /var/www/html/urlmaker    version ubuntu avec apache2

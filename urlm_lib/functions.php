@@ -5,7 +5,7 @@
  */
 
 
-function log($msg){
+function _log($msg){
     $debug .= '<br> <i class="fa fa-circle"></i> '.$msg;
 }
 
@@ -80,10 +80,14 @@ function cleanpath($url)
     return $path;
 }
 
-
+/**
+ * @param $varPost
+ * @return array
+ */
 function ranger_tableau($varPost)
 {
     $tmp = [];
+    $scan = [];
 
     if (isset($_POST[$varPost])) {
         if ($_POST[$varPost] == 'modif') {
@@ -105,6 +109,9 @@ function ranger_tableau($varPost)
             sort($scan);
         }
 
+    }
+    else{
+        log('nope pour le rangement de tableau');
     }
     return $scan;
 }

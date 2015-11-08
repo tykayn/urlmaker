@@ -1,5 +1,6 @@
 <?php
 
+
 $lesResultats .= " <div class='textes' id='textespropres'>
        $copybouton $pourcopier
     </div>
