@@ -7,9 +7,12 @@ $dactuel = date( '/Y/m' ) . $amois[ date( 'm' ) ];
 $path = __DIR__ . '/../../';
 //si y'a pas de dossier défini ET qu'il existe un dossier actuel y aller, sinon aller à la racine
 //si y'a un dossier défini aller a ce dossier
-if ( isset( $_POST[ 'path' ] ) && !empty( $_POST[ 'path' ] ) ) {
-	$dossierscanned = str_replace( $disrel , '' , $_POST[ 'path' ] );
-	$path = cleanpath( $_POST[ 'path' ] );
+
+$partie = $_GET[ 'p' ];
+$postedPath = $_POST[ 'path' ];
+if ( isset( $postedPath ) && !empty( $postedPath ) ) {
+	$dossierscanned = str_replace( $disrel , '' , $postedPath );
+	$path = cleanpath( $postedPath );
 	_log( '#1# $_POST[\'path\'] $path=' . $path;
 }
 elseif ( isset( $_GET[ 'path' ] ) && !empty( $_GET[ 'path' ] ) ) {
@@ -17,15 +20,15 @@ elseif ( isset( $_GET[ 'path' ] ) && !empty( $_GET[ 'path' ] ) ) {
 	$path = cleanpath( $_GET[ 'path' ] );
 	_log( '#1# $_GET[\'path\'] $path=' . $path;
 }
-elseif ( isset( $_GET[ 'p' ] ) && $_GET[ 'p' ] == "year" ) {
+elseif ( isset( $partie ) && $partie == "year" ) {
 	$path = getcwd() . date( '/Y/' );
 	_log( '#2# year $path=' . $path;
 }
-elseif ( isset( $_GET[ 'p' ] ) && $_GET[ 'p' ] == "month" ) {
+elseif ( isset( $partie ) && $partie == "month" ) {
 	$path = getcwd() . date( '/Y/m' ) . $amois[ date( 'm' ) ];
 	_log( '#5# month $path= ' . $path;
 }
-elseif ( isset( $_GET[ 'p' ] ) && $_GET[ 'p' ] == "top" ) {
+elseif ( isset( $partie ) && $partie == "top" ) {
 	$path = getcwd();
 	_log( '#3# top $path=' . $path;
 }

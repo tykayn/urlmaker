@@ -1,7 +1,7 @@
 <?php
 
-if ($dir_unfound == 1) {
-    $msg = "<div class='alert alert-danger'> harrrrrrr le dossier est fucké. URL maker vous propose le dossier suivant</div>";
+if ( $dir_unfound == 1 ) {
+	$msg = "<div class='alert alert-danger'> harrrrrrr le dossier est fucké. URL maker vous propose le dossier suivant</div>";
 }
 
 
