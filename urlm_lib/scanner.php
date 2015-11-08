@@ -5,8 +5,32 @@ if ($dir_unfound != 1) {
 
     // rangement du tableau de scan
 
-    $scan = ranger_tableau('sort');
+//    $scan = ranger_tableau('sort');
 
+    if (isset($_POST[$varPost])) {
+        if ($_POST[$varPost] == 'modif') {
+            foreach ($scan as $f) {
+                $tmp[basename($f)] = filemtime($pathnormal . '/' . $f);  //ranger fichiers par date de création
+            }
+            asort($tmp);
+            $scan = array_keys($tmp);
+            // print_r($tmp);
+        } elseif ($_POST[$varPost] == 'crea') {
+            foreach ($scan as $f) {
+                $tmp[basename($f)] = filectime($pathnormal . '/' . $f);  //ranger fichiers par date de création
+            }
+            asort($tmp);
+            $scan = array_keys($tmp);
+        } elseif ($_POST[$varPost] == 'desc') {
+            arsort($scan);
+        } elseif ($_POST[$varPost] == 'asc') {
+            sort($scan);
+        }
+
+    }
+    else{
+        log('nope pour le rangement de tableau');
+    }
 
 
     $prem_img = 0;
@@ -155,7 +179,7 @@ if ($dir_unfound != 1) {
             $pourcopier = $pourcopier;
             $copybouton = " <a class='bouton_copier' href='#textespropres' onClick=\"window.clipboardData.setData('Text', document.getElementById('textespropres').innerHTML); this.style.backgroundColor='#BBEAD2'; \">Copier</a> ";
         } else {
-            $copybouton = " <object width='60' height='20' id='copybutton' class='bouton_copier'>
+            $copybouton = " <object height='20px' width='20px' id='copybutton' class='bouton_copier'>
         <PARAM NAME=FlashVars VALUE=' txtToCopy=$pourcopier '>
         <param name='movie' value='copyButton.swf'>
         <embed src='urlm_lib/copyButton.swf' flashvars='txtToCopy=$pourcopier ' width='200' height='200'></embed></object> ";

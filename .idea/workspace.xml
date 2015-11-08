@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25c6d285-546f-4423-a129-cde04b1af42f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/check_config.php" afterPath="$PROJECT_DIR$/urlm_lib/check_config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/config.php" afterPath="$PROJECT_DIR$/urlm_lib/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/functions.php" afterPath="$PROJECT_DIR$/urlm_lib/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/prepend.php" afterPath="$PROJECT_DIR$/urlm_lib/prepend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/resultats.php" afterPath="$PROJECT_DIR$/urlm_lib/resultats.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/design.css" afterPath="$PROJECT_DIR$/urlm_lib/design.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/scanner.php" afterPath="$PROJECT_DIR$/urlm_lib/scanner.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,37 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dossiers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/urlm_lib/dossiers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resultats.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/urlm_lib/resultats.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <marker date="1447011948804" expanded="true" signature="65:107" placeholder="..." />
-                <marker date="1447011948804" expanded="true" signature="129:416" placeholder="..." />
-                <marker date="1447011948804" expanded="true" signature="152:215" placeholder="..." />
-                <marker date="1447011948804" expanded="true" signature="252:391" placeholder="..." />
-                <marker date="1447011948804" expanded="true" signature="265:329" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urlm_lib/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -80,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/urlm_lib/functions.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <caret line="91" column="3" selection-start-line="91" selection-start-column="3" selection-end-line="114" selection-end-column="5" />
               <folding>
                 <element signature="e#7#46#0#PHP" expanded="true" />
               </folding>
@@ -88,28 +59,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/urlm_lib/check_config.php">
+      <file leaf-file-name="scanner.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urlm_lib/scanner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.8791208">
+              <caret line="181" column="99" selection-start-line="181" selection-start-column="86" selection-end-line="181" selection-end-column="99" />
               <folding>
-                <element signature="e#6#55#0#PHP" expanded="true" />
-                <marker date="1447012074140" expanded="true" signature="148:271" placeholder="..." />
-                <marker date="1447012074140" expanded="true" signature="372:478" placeholder="..." />
+                <marker date="1447012445288" expanded="true" signature="9535:9773" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scanner.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/urlm_lib/scanner.php">
+      <file leaf-file-name="design.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/urlm_lib/design.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30291262">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-              <folding>
-                <marker date="1447012196608" expanded="true" signature="8693:8931" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.66831684">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,8 +84,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="65" column="34" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -154,7 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/urlm_lib/design.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/urlm_lib/controller.php" />
         <option value="$PROJECT_DIR$/urlm_lib/config_abs.conf" />
@@ -166,9 +132,10 @@
         <option value="$PROJECT_DIR$/urlm_lib/resultats.php" />
         <option value="$PROJECT_DIR$/urlm_lib/prepend.php" />
         <option value="$PROJECT_DIR$/urlm_lib/check_config.php" />
-        <option value="$PROJECT_DIR$/urlm_lib/config.php" />
         <option value="$PROJECT_DIR$/urlm_lib/functions.php" />
+        <option value="$PROJECT_DIR$/urlm_lib/config.php" />
         <option value="$PROJECT_DIR$/urlm_lib/scanner.php" />
+        <option value="$PROJECT_DIR$/urlm_lib/design.css" />
       </list>
     </option>
   </component>
@@ -341,14 +308,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/urlm_lib/design.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urlm_lib/config_abs.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -426,14 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urlm_lib/controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="20.333334">
@@ -449,11 +400,23 @@
         <state vertical-scroll-proportion="-1.875">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <marker date="1447011948804" expanded="true" signature="65:107" placeholder="..." />
-            <marker date="1447011948804" expanded="true" signature="129:416" placeholder="..." />
-            <marker date="1447011948804" expanded="true" signature="152:215" placeholder="..." />
-            <marker date="1447011948804" expanded="true" signature="252:391" placeholder="..." />
-            <marker date="1447011948804" expanded="true" signature="265:329" placeholder="..." />
+            <marker date="1447011948804" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447011948804" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447011948804" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447011948804" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447011948804" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlm_lib/check_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6443299">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#55#0#PHP" expanded="true" />
+            <marker date="1447012074140" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447012074140" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -466,22 +429,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urlm_lib/check_config.php">
+    <entry file="file://$PROJECT_DIR$/urlm_lib/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#55#0#PHP" expanded="true" />
-            <marker date="1447012074140" expanded="true" signature="148:271" placeholder="..." />
-            <marker date="1447012074140" expanded="true" signature="372:478" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urlm_lib/config.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -489,7 +448,7 @@
     <entry file="file://$PROJECT_DIR$/urlm_lib/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <caret line="91" column="3" selection-start-line="91" selection-start-column="3" selection-end-line="114" selection-end-column="5" />
           <folding>
             <element signature="e#7#46#0#PHP" expanded="true" />
           </folding>
@@ -498,11 +457,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/urlm_lib/scanner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30291262">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state vertical-scroll-proportion="-1.8791208">
+          <caret line="181" column="99" selection-start-line="181" selection-start-column="86" selection-end-line="181" selection-end-column="99" />
           <folding>
-            <marker date="1447012196608" expanded="true" signature="8693:8931" placeholder="..." />
+            <marker date="1447012445288" expanded="true" signature="9535:9773" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlm_lib/design.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66831684">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
