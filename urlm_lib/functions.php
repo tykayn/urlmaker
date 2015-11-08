@@ -34,8 +34,9 @@ function curPageURL() {
  * @return string
  */
 function get_user_browser() {
-	$u_agent = $_SERVER[ 'HTTP_USER_AGENT' ];
+
 	$ub = '';
+	$u_agent = $_SERVER[ 'HTTP_USER_AGENT' ];
 	if ( preg_match( '/MSIE/i' , $u_agent ) ) {
 		$ub = "ie";
 	}

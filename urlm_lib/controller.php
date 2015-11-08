@@ -1,6 +1,6 @@
 <?php
 
-_log( '<h2> controller </h2>';
+_log( '<h2> controller </h2>');
 $dossierscanned = '';
 $dactuel = date( '/Y/m' ) . $amois[ date( 'm' ) ];
 
@@ -8,7 +8,7 @@ $path = __DIR__ . '/../../';
 //si y'a pas de dossier défini ET qu'il existe un dossier actuel y aller, sinon aller à la racine
 //si y'a un dossier défini aller a ce dossier
 
-var_dump($_POST);
+//var_dump($_POST);
 
 
 if(isset($_POST[ 'path' ])){
@@ -16,32 +16,32 @@ if(isset($_POST[ 'path' ])){
 	if ( isset( $postedPath ) && !empty( $postedPath ) ) {
 		$dossierscanned = str_replace( $disrel , '' , $postedPath );
 		$path = cleanpath( $postedPath );
-		_log( '#1# $_POST[\'path\'] $path=' . $path;
+		_log( '#1# $_POST[\'path\'] $path=' . $path);
 	}
 	elseif ( isset( $_GET[ 'path' ] ) && !empty( $_GET[ 'path' ] ) ) {
 		$dossierscanned = str_replace( $disrel , '' , $_GET[ 'path' ] );
 		$path = cleanpath( $_GET[ 'path' ] );
-		_log( '#1# $_GET[\'path\'] $path=' . $path;
+		_log( '#1# $_GET[\'path\'] $path=' . $path);
 	}
 }
 elseif(isset($_GET[ 'p' ])){
 	$partie = $_GET[ 'p' ];
 	if ( isset( $partie ) && $partie == "year" ) {
 		$path = getcwd() . date( '/Y/' );
-		_log( '#2# year $path=' . $path;
+		_log( '#2# year $path=' . $path);
 	}
 	elseif ( isset( $partie ) && $partie == "month" ) {
 		$path = getcwd() . date( '/Y/m' ) . $amois[ date( 'm' ) ];
-		_log( '#5# month $path= ' . $path;
+		_log( '#5# month $path= ' . $path);
 	}
 	elseif ( isset( $partie ) && $partie == "top" ) {
 		$path = getcwd();
-		_log( '#3# top $path=' . $path;
+		_log( '#3# top $path=' . $path);
 	}
 }
 else {
 	$path = getcwd() . $dactuel;
-	_log( '#4# getcwd().$dactuel $path=' . $path;
+	_log( '#4# getcwd().$dactuel $path=' . $path);
 }
 
 
@@ -51,15 +51,15 @@ else {
 
 
 $pathnormal = $path;
-_log( '<br/>#6#  ' . $pathnormal . '<br/>=<br/>' . $path . ';';
+_log( '<br/>#6#  ' . $pathnormal . '<br/>=<br/>' . $path . ';');
 
 if ( file_exists( $path ) ) {
 	$scan = scandir( $path );
-	_log( '<br/>#4# $scan = scandir(' . $path . ')';
+	_log( '<br/>#4# $scan = scandir(' . $path . ')');
 }
 elseif ( file_exists( getcwd() . date( 'Y/' ) ) ) {
 	$scan = scandir( getcwd() . date( 'Y/' ) );
-	_log( '<br/># fallback scan d\'année';
+	_log( '<br/># fallback scan d\'année');
 }
 else {
 	$dir_unfound = 1;

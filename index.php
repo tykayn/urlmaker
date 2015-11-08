@@ -62,8 +62,6 @@ require 'urlm_lib/prepend.php';
         </div>
         <div class="col-lg-4">
             <div class="well">
-
-
                 <?php
 
                 require('urlm_lib/resultats.php');
