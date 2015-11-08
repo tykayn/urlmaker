@@ -1,0 +1,2 @@
+/usr/lib/python2.7/dist-packages/radiotray/AudioPlayerGStreamer.py:51: FutureWarning: The behavior of this method will change in future versions. Use specific 'len(elem)' or 'elem is not None' test instead.
+  if(cfg_provider._settingExists("buffer_size")):

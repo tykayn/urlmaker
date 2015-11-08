@@ -54,7 +54,9 @@ require 'urlm_lib/prepend.php';
             require('urlm_lib/dossiers.php');
             ?>
             <div id='folders' class='alert alert-success'>
-                <h2>Dossiers</h2>
+                <h2>
+                    <i class="fa fa-folder"></i>
+                    Dossiers</h2>
                <?php echo  $dossiers ; ?>
             </div>
         </div>

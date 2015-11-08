@@ -176,7 +176,6 @@ if ($dir_unfound != 1) {
 
     if ($textes != '') {
         if (get_user_browser() == 'ie') {
-            $pourcopier = $pourcopier;
             $copybouton = " <a class='bouton_copier' href='#textespropres' onClick=\"window.clipboardData.setData('Text', document.getElementById('textespropres').innerHTML); this.style.backgroundColor='#BBEAD2'; \">Copier</a> ";
         } else {
             $copybouton = " <object height='20px' width='20px' id='copybutton' class='bouton_copier'>
@@ -184,7 +183,6 @@ if ($dir_unfound != 1) {
         <param name='movie' value='copyButton.swf'>
         <embed src='urlm_lib/copyButton.swf' flashvars='txtToCopy=$pourcopier ' width='200' height='200'></embed></object> ";
         }
-
     }
 }
 else{

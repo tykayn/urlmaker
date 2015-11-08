@@ -4,7 +4,7 @@
 $lesResultats .= " <div class='textes alert alert-success' id='textespropres'>
        <div class='pull-right'> $copybouton </div>
 
-       <div> $pourcopier</div>
+       <div id='pourcopier'><h2>images</h2> $pourcopier</div>
     </div>
 <div class='results'>
 
@@ -19,7 +19,5 @@ $lesResultats .= " <div class='textes alert alert-success' id='textespropres'>
     $config_infos
 </div>
 <p> $debug </p>
-				";
 
-
-echo $lesFichiers;
+				<div id='lefichiers'>$lesFichiers </div>";
