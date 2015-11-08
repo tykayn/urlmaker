@@ -29,7 +29,7 @@ require 'urlm_lib/prepend.php';
 <div id='main' class="container">
 
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-xs-12">
             <nav>
                 <a class="btn btn-primary" href='?p=top'>
                     <img src='urlm_lib/img/favicon.png' alt='URL maker logo'/> Accueil
@@ -47,20 +47,16 @@ require 'urlm_lib/prepend.php';
             echo $noConf;
             require('urlm_lib/form.php');
             echo $leForm;
-            ?>
+	        require('urlm_lib/dossiers.php');
+	        ?>
+	        <div id='folders' class='alert alert-success'>
+		        <h2>
+			        <i class="fa fa-folder"></i>
+			        Dossiers</h2>
+		        <?php echo  $dossiers ; ?>
+	        </div>
         </div>
-        <div class="col-lg-4">
-            <?php
-            require('urlm_lib/dossiers.php');
-            ?>
-            <div id='folders' class='alert alert-success'>
-                <h2>
-                    <i class="fa fa-folder"></i>
-                    Dossiers</h2>
-               <?php echo  $dossiers ; ?>
-            </div>
-        </div>
-        <div class="col-lg-4">
+        <div class="col-lg-8 col-xs-12">
             <div class="well">
                 <?php
 
