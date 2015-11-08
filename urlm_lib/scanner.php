@@ -93,7 +93,7 @@ if ( $dir_unfound != 1 ) {
 
 			//  aperçu d'image pour un dossier à la première image qui passe
 			if ( $prem_img == 0 && preg_match( "#jpg|png#i" , $v ) ) {
-				$imgurl = $path . $dactuel . '/' . $v;
+				$imgurl = $path . $relativeFolderURL . '/' . $v;
 				$premiere_img = '<img src="' . $imgurl . '" class="mini_img responsive-image" style="width: 100%; max-width:100%;" alt="' . $imgurl . '" >  <br/>
                                                            ' . $add;
 				$prem_img = 1;

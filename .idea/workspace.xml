@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25c6d285-546f-4423-a129-cde04b1af42f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/controller.php" afterPath="$PROJECT_DIR$/urlm_lib/controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/design.css" afterPath="$PROJECT_DIR$/urlm_lib/design.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/scanner.php" afterPath="$PROJECT_DIR$/urlm_lib/scanner.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlm_lib/scans/wiki.php" afterPath="$PROJECT_DIR$/urlm_lib/scans/wiki.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="urlmaker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="wiki.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wiki.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urlm_lib/scans/wiki.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5301455">
+            <state vertical-scroll-proportion="-4.3965516">
               <caret line="17" column="175" selection-start-line="17" selection-start-column="175" selection-end-line="17" selection-end-column="175" />
               <folding />
             </state>
@@ -41,10 +37,10 @@
       <file leaf-file-name="scanner.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/urlm_lib/scanner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.9166665">
-              <caret line="95" column="34" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="34" />
+            <state vertical-scroll-proportion="-7.7916665">
+              <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
               <folding>
-                <marker date="1447021286756" expanded="true" signature="3196:3434" placeholder="..." />
+                <marker date="1447022036444" expanded="true" signature="3206:3444" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -60,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/urlm_lib/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2967033">
+            <state vertical-scroll-proportion="0.66964287">
               <caret line="20" column="22" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <marker date="1447021164020" expanded="true" signature="2851:2975" placeholder="..." />
@@ -101,8 +97,8 @@
         <option value="$PROJECT_DIR$/urlm_lib/form.php" />
         <option value="$PROJECT_DIR$/urlm_lib/design.css" />
         <option value="$PROJECT_DIR$/urlm_lib/controller.php" />
-        <option value="$PROJECT_DIR$/urlm_lib/scanner.php" />
         <option value="$PROJECT_DIR$/urlm_lib/scans/wiki.php" />
+        <option value="$PROJECT_DIR$/urlm_lib/scanner.php" />
       </list>
     </option>
   </component>
@@ -350,7 +346,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1447021286756" expanded="true" signature="3196:3434" placeholder="..." />
+            <marker date="1447022036444" expanded="true" signature="3206:3444" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -416,7 +412,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
           <folding>
-            <marker date="1447021286756" expanded="true" signature="3196:3434" placeholder="..." />
+            <marker date="1447022036444" expanded="true" signature="3206:3444" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -500,7 +496,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
           <folding>
-            <marker date="1447021286756" expanded="true" signature="3196:3434" placeholder="..." />
+            <marker date="1447022036444" expanded="true" signature="3206:3444" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -748,32 +744,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urlm_lib/controller.php">
+    <entry file="file://$PROJECT_DIR$/urlm_lib/scans/wiki.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2967033">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <marker date="1447021164020" expanded="true" signature="2851:2975" placeholder="..." />
-            <marker date="1447021164020" expanded="true" signature="3124:3205" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-4.3965516">
+          <caret line="17" column="175" selection-start-line="17" selection-start-column="175" selection-end-line="17" selection-end-column="175" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/urlm_lib/scanner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.9166665">
-          <caret line="95" column="34" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="34" />
+        <state vertical-scroll-proportion="-7.7916665">
+          <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
           <folding>
-            <marker date="1447021286756" expanded="true" signature="3196:3434" placeholder="..." />
+            <marker date="1447022036444" expanded="true" signature="3206:3444" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urlm_lib/scans/wiki.php">
+    <entry file="file://$PROJECT_DIR$/urlm_lib/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5301455">
-          <caret line="17" column="175" selection-start-line="17" selection-start-column="175" selection-end-line="17" selection-end-column="175" />
-          <folding />
+        <state vertical-scroll-proportion="0.66964287">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <marker date="1447021164020" expanded="true" signature="2851:2975" placeholder="..." />
+            <marker date="1447021164020" expanded="true" signature="3124:3205" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
