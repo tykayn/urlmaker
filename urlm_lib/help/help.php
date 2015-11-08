@@ -64,7 +64,7 @@
 					"09" => "septembre" ,
 					"10" => "octobre" ,
 					"11" => "novembre" ,
-					"12" => "decembre",
+					"12" => "decembre" ,
 		];
 		echo date( '/Y/m' ) . $amois[ date( 'm' ) ];
 		?> </strong><br/> Vous choisissez le dossier à analyser dans la partie Liens, vous choisissez ensuite les options

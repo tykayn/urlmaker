@@ -14,92 +14,93 @@ require 'urlm_lib/prepend.php';
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>URL maker Tykayn</title>
-    <link rel="stylesheet" media="screen" type="text/css" title="Mon design" href="urlm_lib/design.css"/>
-    <link rel="stylesheet" media="screen" type="text/css" title="Mon design"
-        href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" media="screen" type="text/css" title="Mon design"
-        href="bower_components/font-awesome/css/font-awesome.css"/>
-    <link rel="shortcut icon" type="image/png" href="urlm_lib/img/favicon.png"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>URL maker Tykayn</title>
+	<link rel="stylesheet" media="screen" type="text/css" title="Mon design" href="urlm_lib/design.css"/>
+	<link rel="stylesheet" media="screen" type="text/css" title="Mon design"
+				href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" media="screen" type="text/css" title="Mon design"
+				href="bower_components/font-awesome/css/font-awesome.css"/>
+	<link rel="shortcut icon" type="image/png" href="urlm_lib/img/favicon.png"/>
 
 </head>
 <body>
 
 <div id='main' class="container">
 
-    <div class="row">
-        <div class="col-lg-4 col-xs-12">
-            <nav>
-                <a class="btn btn-primary" href='?p=top'>
-                    <img src='urlm_lib/img/favicon.png' alt='URL maker logo'/> Accueil
-                </a>
-                <a class="btn btn-primary" href='?p=year'>Année <?php echo date('Y'); ?></a>
-                <a class="btn btn-primary" href='?p=month'> <?php echo date('m'); ?>e Mois</a>
+	<div class="row">
+		<div class="col-lg-4 col-xs-12">
+			<nav>
+				<a class="btn btn-primary" href='?p=top'>
+					<img src='urlm_lib/img/favicon.png' alt='URL maker logo'/> Accueil
+				</a>
+				<a class="btn btn-primary" href='?p=year'>Année <?php echo date( 'Y' ); ?></a>
+				<a class="btn btn-primary" href='?p=month'> <?php echo date( 'm' ); ?>e Mois</a>
                         <span class='help'>
                             <a href='urlm_lib/help/help.php'>
-                                | Aide
-                                <i class="fa fa-help"></i>
+	                            | Aide
+	                            <i class="fa fa-help"></i>
                             </a>
                         </span>
-            </nav>
-            <?php
-            echo $noConf;
-            require('urlm_lib/form.php');
-            echo $leForm;
-	        require('urlm_lib/dossiers.php');
-	        ?>
-	        <div id='folders' class='alert alert-success'>
-		        <h2>
-			        <i class="fa fa-folder"></i>
-			        Dossiers</h2>
-		        <?php echo  $dossiers ; ?>
-	        </div>
-        </div>
-        <div class="col-lg-8 col-xs-12">
-            <div class="well">
-                <?php
+			</nav>
+			<?php
+			echo $noConf;
+			require( 'urlm_lib/form.php' );
+			echo $leForm;
+			require( 'urlm_lib/dossiers.php' );
+			?>
+			<div id='folders' class='alert alert-success'>
+				<h2>
+					<i class="fa fa-folder"></i>
+					Dossiers
+				</h2>
+				<?php echo $dossiers; ?>
+			</div>
+		</div>
+		<div class="col-lg-8 col-xs-12">
+			<div class="well">
+				<?php
 
-                require('urlm_lib/resultats.php');
-                echo $lesResultats;
-                ?>
-            </div>
-        </div>
+				require( 'urlm_lib/resultats.php' );
+				echo $lesResultats;
+				?>
+			</div>
+		</div>
 
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <?php
-            echo $corps;
-            ?>
-        </div>
-    </div>
-    <footer class="row-fluid well">
-        <div id='credits'>
-            Aide et application crées par
-            <a href='http://artlemoine.com'>Baptiste Lemoine (artlemoine.com)</a>
-            . Version 1.6
-        </div>
-    </footer>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<?php
+			echo $corps;
+			?>
+		</div>
+	</div>
+	<footer class="row-fluid well">
+		<div id='credits'>
+			Aide et application crées par
+			<a href='http://artlemoine.com'>Baptiste Lemoine (artlemoine.com)</a>
+			. Version 1.6
+		</div>
+	</footer>
 
 
 </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-    $(function () {
-        dimspe = $('#dim_spe');
-        dimspe.hide();
+	$(function () {
+		dimspe = $('#dim_spe');
+		dimspe.hide();
 
-        // afficher la dimension spéciale si html sélectionné
-        $('#sel_lang').on('change', function () {
-            if ($('#sel_lang').val() == 'html')
-                dimspe.show();
-            else {
-                dimspe.hide();
-            }
-        })
-    });
+		// afficher la dimension spéciale si html sélectionné
+		$('#sel_lang').on('change', function () {
+			if ($('#sel_lang').val() == 'html')
+				dimspe.show();
+			else {
+				dimspe.hide();
+			}
+		})
+	});
 </script>
 </body>
 </html>
