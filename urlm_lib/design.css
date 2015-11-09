@@ -53,9 +53,22 @@ textarea {
     width: 100%;
 }
 
-.thumbimg{
-    /*color: darkblue;*/
+.mini_img{
+
+    max-height: 150px;
+    max-width: 150px;
+    float: right;
 }
-.relFolder{
-    color: orangered !important;
+    /**
+     liens **/
+.thumbimg {
+    color: darkblue;
+}
+
+.grand {
+    color: mediumpurple;
+}
+
+.thumbimg .relFolder, .relFolder {
+    color: orangered;
 }

@@ -1,29 +1,39 @@
 <?php
-
+/**
+ * liens en wiki
+ */
 
 if ( isset( $_POST[ "backreturn" ] ) && $_POST[ "backreturn" ] == 1 ) {
 	$br = '%%%';
 }
-//pour lien vers petit ou grand. test du dossier G, puis du dossier THUMB
+
+/**
+ * pour lien vers petit ou grand
+ */
 if ( $thumb == 1 ) {
 	_log( "<br/>test de $pathnormal.'/g/'.$v puis de $pathnormal.'/thumb/'.$v " );
+	/**
+	 * dossier "g"
+	 */
+	$pathImage      = '<span class="thumbimg grand">' . $path . '<span class=relFolder>' . $relativeFolderURL . '</span>/' . $v . '</span>';
+	$pathSmallImage = '<span class="thumbimg">' . $path . '<span class=relFolder>' . $relativeFolderURL . '</span>/thumb/' . $v . '</span>';
+
 	if ( file_exists( $pathnormal . '/g/' . $v ) ) {
+
 		$prethumb = '[';
 		$afterthumb = '|' . $path . '/g/' . $v . ']';
-		$add = '' . $prethumb . '((<span class="thumbimg">' . $path . '/' . $v . '</span>|' . $alt . '|C))<span class="grand">' . $afterthumb . '</span>' . $br . '<br/>';
-
-
+		$add = '' . $prethumb . '((' . $pathImage . '|' . $alt . '|C))<span class="grand">' . $afterthumb . '</span>' . $br . '<br/>';
 	}
+	/**
+	 * dossier "thumb"
+	 */
 	elseif ( file_exists( $pathnormal . '/thumb/' . $v ) ) {
-		$add = '[((<span class="thumbimg">' . $path . '<span class=relFolder>'.$relativeFolderURL . '</span>/thumb/' . $v . '</span>|' . $alt . '|C))|<span class="grand">' . $path . '<span class=relFolder>'.$relativeFolderURL . '</span>/' . $v . '</span>]' . $br . '<br/>';
-//		$txtpropre = '[((' . $path . '/' . $dactuel . '/thumb/' . $v . '|' . $alt . '|C))|' . $path . '/' . $dactuel . '/' . $v . ']' . $br . '';
-		$txtpropre = 'EEEEEEE [((' . $path . '<span class=relFolder>'.$relativeFolderURL . '</span>/thumb/' . $v . '|' . $alt . '|C))|' . $path . '<span class=relFolder>'.$relativeFolderURL . '</span>/' . $v . ']' . $br . '';
+		$add = '[((' . $pathSmallImage . '|' . $alt . '|C))|<span class="grand">' . $pathImage .']' . $br . '<br/>';
+		$txtpropre = 'EEEEEEE [((' . $pathSmallImage . '|' . $alt . '|C))|' . $pathImage . ']' . $br . '';
 	}
 	else {
-//		$add = '<span class="unfound">((<span class="thumbimg">' . $path . '/' . $dactuel . '/' . $v . '</span>|' . $alt . '|C))' . $br . '</span><br/>';
-		$add = '<span class="unfound">((<span class="thumbimg">' . $path . '/' . $relativeFolderURL . '/' . $v . '</span>|' . $alt . '|C))' . $br . '</span><br/>';
-//		$txtpropre = '((' . $path . '/' . $dactuel . '/' . $v . '|' . $alt . '|C))' . $br . '';
-		$txtpropre = '((' . $path . '/' . $relativeFolderURL . '/' . $v . '|' . $alt . '|C))' . $br . '';
+		$add = '<span class="unfound">(('. $pathImage . '</span>|' . $alt . '|C))' . $br . '</span><br/>';
+		$txtpropre = '((' . $pathImage . '|' . $alt . '|C))' . $br . '';
 		$pasfound = 1;
 
 	}
