@@ -1,6 +1,6 @@
 <?php
 /**
- * vérifier les éléments de configuration
+ * vérifier le fichier de configuration
  */
 
 
@@ -31,7 +31,7 @@ if ( !file_exists( $file ) && $index == 1 ) {
 	//	exit;
 }
 else {
-	// Lit un fichier, et le place dans une chaîne
+	$disurlinfo .= "<span class='success'>fichier de config : $file</span>";
 	$handle = fopen( $file , "r" );
 	$disurl = fread( $handle , filesize( $file ) );
 	fclose( $handle );
