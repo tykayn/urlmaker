@@ -12,12 +12,13 @@ if ( isset( $_POST[ "backreturn" ] ) && $_POST[ "backreturn" ] == 1 ) {
  * pour lien vers petit ou grand
  */
 if ( $thumb == 1 ) {
+	$path = str_replace($relativeFolderURL, '<span class=relFolder>' . $relativeFolderURL . '</span>' , $path);
 	_log( "<br/>test de $pathnormal.'/g/'.$v puis de $pathnormal.'/thumb/'.$v " );
 	/**
 	 * dossier "g"
 	 */
-	$pathImage      = '<span class="thumbimg grand">' . $path . '<span class=relFolder>' . $relativeFolderURL . '</span>/' . $v . '</span>';
-	$pathSmallImage = '<span class="thumbimg">' . $path . '<span class=relFolder>' . $relativeFolderURL . '</span>/thumb/' . $v . '</span>';
+	$pathImage      = '<span class="thumbimg grand">' . $path .'/' . $v . '</span>';
+	$pathSmallImage = '<span class="thumbimg">' . $path . '/thumb/' . $v . '</span>';
 
 	if ( file_exists( $pathnormal . '/g/' . $v ) ) {
 

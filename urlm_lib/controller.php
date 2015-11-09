@@ -18,7 +18,7 @@ if ( isset( $_GET[ 'path' ] ) ) {
 	if ( isset( $postedPath ) && !empty( $postedPath ) ) {
 		$dossierscanned = str_replace( $disrel , '' , $postedPath );
 		$path = cleanpath( $postedPath );
-		$relativeFolderURL = '/'.str_replace($disrel,'',$postedPath);
+		$relativeFolderURL =  str_replace($disrel,'',$postedPath);
 		_log( '#1# $_POST[\'path\'] $path=' . $path );
 		_log( ' $disrel : ' . $disrel );
 		_log( ' dossier publique $relativeFolderURL : ' . $relativeFolderURL );

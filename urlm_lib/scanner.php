@@ -38,6 +38,7 @@ if ( $dir_unfound != 1 ) {
 
 	$prem_img = 0;
 
+	$textPath = $path;
 	foreach ( $scan AS $k => $v ) {
 		//	$textes .='<br/> '.$k.' ->'.$v;
 		_log( "<br/> scan $k=>$v " );
@@ -91,9 +92,11 @@ if ( $dir_unfound != 1 ) {
 				//regroupement des liens de navigation
 			}
 
-			//  aperçu d'image pour un dossier à la première image qui passe
+			/**
+			 * aperçu d'image pour un dossier à la première image qui passe
+			 */
 			if ( $prem_img == 0 && preg_match( "#jpg|png#i" , $v ) ) {
-				$imgurl = $path . $relativeFolderURL . '/' . $v;
+				$imgurl = $textPath . '/' . $v;
 				$premiere_img = '<img src="' . $imgurl . '" class="mini_img " alt="' . $imgurl . '" >  <br/>';
 				$prem_img = 1;
 			}
