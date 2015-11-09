@@ -53,19 +53,27 @@ textarea {
     width: 100%;
 }
 
-.mini_img{
+.mini_img {
 
     max-height: 150px;
     max-width: 150px;
     float: right;
 }
-    /**
-     liens **/
+
+/**
+ liens
+ **/
+.linked{
+    background: #ccc;
+    padding: 0.5em;
+    display: block;
+}
 .thumbimg {
     color: darkblue;
 }
 
 .grand {
+    font-weight: 600;
     color: mediumpurple;
 }
 

@@ -28,8 +28,8 @@ if ( $thumb == 1 ) {
 	 * dossier "thumb"
 	 */
 	elseif ( file_exists( $pathnormal . '/thumb/' . $v ) ) {
-		$add = '[((' . $pathSmallImage . '|' . $alt . '|C))|<span class="grand">' . $pathImage .']' . $br . '<br/>';
-		$txtpropre = 'EEEEEEE [((' . $pathSmallImage . '|' . $alt . '|C))|' . $pathImage . ']' . $br . '';
+		$add = '<span class="linked">[((' . $pathSmallImage . '|' . $alt . '|C))|<span class="grand">' . $pathImage .']</span>' . $br . '<br/>';
+		$txtpropre = '[((' . $pathSmallImage . '|' . $alt . '|C))|' . $pathImage . ']' . $br . '';
 	}
 	else {
 		$add = '<span class="unfound">(('. $pathImage . '</span>|' . $alt . '|C))' . $br . '</span><br/>';

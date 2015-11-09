@@ -27,19 +27,14 @@ $browserrr
 
 //teste si l'appli a été configuré avec $disurl
 if ( !file_exists( $file ) && $index == 1 ) {
-
-
 	header( "Location: urlm_lib/setup.php" );/* Redirection du navigateur */
 	//	exit;
-
 }
 else {
 	// Lit un fichier, et le place dans une chaîne
 	$handle = fopen( $file , "r" );
-
 	$disurl = fread( $handle , filesize( $file ) );
 	fclose( $handle );
-
 	$disurlinfo .= "<span class='success'>disurl: $disurl</span>";
 }
 
