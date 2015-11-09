@@ -3,6 +3,7 @@
  * liens en wiki
  */
 
+
 if ( isset( $_POST[ "backreturn" ] ) && $_POST[ "backreturn" ] == 1 ) {
 	$br = '%%%';
 }
